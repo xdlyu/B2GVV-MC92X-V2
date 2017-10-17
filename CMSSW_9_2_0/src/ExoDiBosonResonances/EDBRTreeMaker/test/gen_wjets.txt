@@ -1,0 +1,15 @@
+#!/bin/bash
+num=2500
+numm=3000
+while (($num<=2500))
+do
+awk  '{flag = 1}
+     {sub(/NUM/,'$num')}
+     {sub(/NUMM/,'$numm')}
+     {if(flag == 1) {print $0} else {next} }' \
+./crab3_analysisWJetsToLNu_HT.py > crab3_analysisWJetsToLNu_HT-$num-$numm.py
+let num+=200
+let numm+=200
+done
+
+

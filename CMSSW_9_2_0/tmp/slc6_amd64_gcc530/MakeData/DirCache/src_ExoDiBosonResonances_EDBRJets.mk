@@ -1,0 +1,2 @@
+ALL_PACKAGES += ExoDiBosonResonances/EDBRJets
+subdirs_src_ExoDiBosonResonances_EDBRJets := src_ExoDiBosonResonances_EDBRJets_python

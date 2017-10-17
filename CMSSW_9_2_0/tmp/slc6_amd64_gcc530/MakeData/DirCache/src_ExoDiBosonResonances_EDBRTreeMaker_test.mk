@@ -1,0 +1,3 @@
+ALL_COMMONRULES += src_ExoDiBosonResonances_EDBRTreeMaker_test
+src_ExoDiBosonResonances_EDBRTreeMaker_test_parent := ExoDiBosonResonances/EDBRTreeMaker
+src_ExoDiBosonResonances_EDBRTreeMaker_test_INIT_FUNC += $$(eval $$(call CommonProductRules,src_ExoDiBosonResonances_EDBRTreeMaker_test,src/ExoDiBosonResonances/EDBRTreeMaker/test,TEST))

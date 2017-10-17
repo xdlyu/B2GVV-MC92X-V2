@@ -1,0 +1,2 @@
+ALL_PACKAGES += ExoDiBosonResonances/EDBRTreeMaker
+subdirs_src_ExoDiBosonResonances_EDBRTreeMaker := src_ExoDiBosonResonances_EDBRTreeMaker_plugins src_ExoDiBosonResonances_EDBRTreeMaker_test

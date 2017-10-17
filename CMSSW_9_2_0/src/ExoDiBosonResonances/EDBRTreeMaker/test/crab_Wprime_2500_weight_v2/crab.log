@@ -1,0 +1,1808 @@
+DEBUG 2017-10-02 13:46:55,904: 	 Executing command: 'submit'
+DEBUG 2017-10-02 13:46:55,904: 	 Found CRAB cache file /afs/cern.ch/user/l/lewang/.crab3
+DEBUG 2017-10-02 13:46:55,917: 	 Checking credentials
+DEBUG 2017-10-02 13:46:55,917: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-10-02 13:46:55,917: 	 Getting proxy life time left
+DEBUG 2017-10-02 13:46:57,031: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 86373
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-02 13:46:57,939: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 86372
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-02 13:46:57,940: 	 Proxy valid for 23:59:33 hours
+INFO 2017-10-02 13:46:57,940: 	 Will use CRAB configuration file crab3_analysisWprime2500.py
+DEBUG 2017-10-02 13:46:57,940: 	 Loading CRAB configuration file.
+DEBUG 2017-10-02 13:46:57,946: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2017-10-02 13:46:58,154: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-02 13:46:58,155: 	 Checking credentials
+DEBUG 2017-10-02 13:46:58,155: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-10-02 13:46:58,156: 	 Getting proxy life time left
+DEBUG 2017-10-02 13:46:59,179: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 86370
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-02 13:47:00,091: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 86369
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-02 13:47:00,092: 	 Proxy valid for 23:59:30 hours
+DEBUG 2017-10-02 13:47:02,013: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u74916 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-02 13:47:02,412: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+DEBUG 2017-10-02 13:47:02,529: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-02 13:47:02,529: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-10-02 13:47:02,530: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang_cmsweb.cern.ch for credential name
+DEBUG 2017-10-02 13:47:02,835: 	 Executing : 
+ command : myproxy-info -l 1b9ed1fd5af45f6b0603ad12c45a57a42d266ac3 -s myproxy.cern.ch
+ output : username: 1b9ed1fd5af45f6b0603ad12c45a57a42d266ac3
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  timeleft: 559:09:14  (23.3 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-02 13:47:02,837: 	 Myproxy is valid: 2012954
+DEBUG 2017-10-02 13:47:02,837: 	 Command use: submit
+DEBUG 2017-10-02 13:47:02,837: 	 Options use: ['-c', 'crab3_analysisWprime2500.py']
+DEBUG 2017-10-02 13:47:03,280: 	 CRABClient version: 3.3.1707.patch1
+DEBUG 2017-10-02 13:47:03,280: 	 Instance is prod
+DEBUG 2017-10-02 13:47:03,280: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-10-02 13:47:03,281: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-10-02 13:47:03,281: 	 Started submission
+DEBUG 2017-10-02 13:47:03,281: 	 Working on /afs/cern.ch/user/l/lewang/Xudong/Summer17/MC/CMSSW_9_2_0/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_Wprime_2500_weight_v2
+DEBUG 2017-10-02 13:47:03,916: 	 Loading required information from the environment
+DEBUG 2017-10-02 13:47:03,916: 	 Found CMSSW_9_2_0 for slc6_amd64_gcc530 with base /afs/cern.ch/user/l/lewang/Xudong/Summer17/MC/CMSSW_9_2_0
+DEBUG 2017-10-02 13:47:03,916: 	 Loading required information from the environment
+DEBUG 2017-10-02 13:47:03,920: 	 Found CMSSW_9_2_0 for slc6_amd64_gcc530 with base /afs/cern.ch/user/l/lewang/Xudong/Summer17/MC/CMSSW_9_2_0
+DEBUG 2017-10-02 13:47:03,937: 	 UNIQUE NAME: tarUUID f76cbea5-390f-4281-8a44-ed20094f8a01 
+DEBUG 2017-10-02 13:47:03,938: 	 self.config: from WMCore.Configuration import Configuration
+config = Configuration()
+config.section_('General')
+config.General.transferLogs = True
+config.General.requestName = 'Wprime_2500_weight_v2'
+config.section_('JobType')
+config.JobType.psetName = 'analysis.py'
+config.JobType.pluginName = 'Analysis'
+config.JobType.inputFiles = ['Summer16_23Sep2016V3_MC_L1FastJet_AK4PFchs.txt', 'Summer16_23Sep2016V3_MC_L2Relative_AK4PFchs.txt', 'Summer16_23Sep2016V3_MC_L3Absolute_AK4PFchs.txt', 'Summer16_23Sep2016V3_MC_L1FastJet_AK8PFchs.txt', 'Summer16_23Sep2016V3_MC_L2Relative_AK8PFchs.txt', 'Summer16_23Sep2016V3_MC_L3Absolute_AK8PFchs.txt', 'Summer16_23Sep2016V3_MC_L1FastJet_AK8PFPuppi.txt', 'Summer16_23Sep2016V3_MC_L2Relative_AK8PFPuppi.txt', 'Summer16_23Sep2016V3_MC_L3Absolute_AK8PFPuppi.txt', 'Summer16_23Sep2016V3_MC_L1FastJet_AK4PFPuppi.txt', 'Summer16_23Sep2016V3_MC_L2Relative_AK4PFPuppi.txt', 'Summer16_23Sep2016V3_MC_L3Absolute_AK4PFPuppi.txt']
+config.JobType.allowUndistributedCMSSW = True
+config.section_('Data')
+config.Data.inputDataset = '/WprimeToWZToWlepZhad_narrow_M-2500_13TeV-madgraph/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM'
+config.Data.outputDatasetTag = 'Wprime_2500_weight_v2'
+config.Data.totalUnits = -1
+config.Data.unitsPerJob = 10
+config.Data.inputDBS = 'global'
+config.Data.splitting = 'FileBased'
+config.Data.publication = False
+config.section_('Site')
+config.Site.storageSite = 'T2_CH_CERN'
+
+DEBUG 2017-10-02 13:47:03,938: 	 self.config.JobType.psetName: analysis.py
+INFO 2017-10-02 13:47:03,939: 	 Importing CMSSW configuration analysis.py
+INFO 2017-10-02 13:47:04,736: 	 Finished importing CMSSW configuration analysis.py
+DEBUG 2017-10-02 13:47:04,736: 	 Writing CMSSW configuration to /afs/cern.ch/user/l/lewang/Xudong/Summer17/MC/CMSSW_9_2_0/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_Wprime_2500_weight_v2/inputs/PSet.py
+DEBUG 2017-10-02 13:47:04,887: 	 The following EDM output files will be collected: []
+DEBUG 2017-10-02 13:47:04,887: 	 The following TFile output files will be collected: ['RStreeEDBR_pickup.root']
+DEBUG 2017-10-02 13:47:04,887: 	 The following user output files will be collected: []
+DEBUG 2017-10-02 13:47:04,887: 	 Loading required information from the environment
+DEBUG 2017-10-02 13:47:04,887: 	 Found CMSSW_9_2_0 for slc6_amd64_gcc530 with base /afs/cern.ch/user/l/lewang/Xudong/Summer17/MC/CMSSW_9_2_0
+DEBUG 2017-10-02 13:47:04,887: 	 Making tarball in /afs/cern.ch/user/l/lewang/Xudong/Summer17/MC/CMSSW_9_2_0/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_Wprime_2500_weight_v2/inputs/f76cbea5-390f-4281-8a44-ed20094f8a01default.tgz
+DEBUG 2017-10-02 13:47:04,895: 	 Checking directory /afs/cern.ch/user/l/lewang/Xudong/Summer17/MC/CMSSW_9_2_0/lib
+DEBUG 2017-10-02 13:47:04,895: 	 Adding directory /afs/cern.ch/user/l/lewang/Xudong/Summer17/MC/CMSSW_9_2_0/lib to tarball
+DEBUG 2017-10-02 13:47:05,036: 	 Checking directory /afs/cern.ch/user/l/lewang/Xudong/Summer17/MC/CMSSW_9_2_0/biglib
+DEBUG 2017-10-02 13:47:05,036: 	 Adding directory /afs/cern.ch/user/l/lewang/Xudong/Summer17/MC/CMSSW_9_2_0/biglib to tarball
+DEBUG 2017-10-02 13:47:05,038: 	 Checking directory /afs/cern.ch/user/l/lewang/Xudong/Summer17/MC/CMSSW_9_2_0/module
+DEBUG 2017-10-02 13:47:05,039: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/Summer17/MC/CMSSW_9_2_0/src/ExoDiBosonResonances/EDBRCommon/python/data to tarball
+DEBUG 2017-10-02 13:47:05,056: 	 Adding file Summer16_23Sep2016V3_MC_L1FastJet_AK4PFchs.txt to tarball
+DEBUG 2017-10-02 13:47:05,058: 	 Adding file Summer16_23Sep2016V3_MC_L2Relative_AK4PFchs.txt to tarball
+DEBUG 2017-10-02 13:47:05,163: 	 Adding file Summer16_23Sep2016V3_MC_L3Absolute_AK4PFchs.txt to tarball
+DEBUG 2017-10-02 13:47:05,164: 	 Adding file Summer16_23Sep2016V3_MC_L1FastJet_AK8PFchs.txt to tarball
+DEBUG 2017-10-02 13:47:05,167: 	 Adding file Summer16_23Sep2016V3_MC_L2Relative_AK8PFchs.txt to tarball
+DEBUG 2017-10-02 13:47:05,257: 	 Adding file Summer16_23Sep2016V3_MC_L3Absolute_AK8PFchs.txt to tarball
+DEBUG 2017-10-02 13:47:05,258: 	 Adding file Summer16_23Sep2016V3_MC_L1FastJet_AK8PFPuppi.txt to tarball
+DEBUG 2017-10-02 13:47:05,259: 	 Adding file Summer16_23Sep2016V3_MC_L2Relative_AK8PFPuppi.txt to tarball
+DEBUG 2017-10-02 13:47:05,356: 	 Adding file Summer16_23Sep2016V3_MC_L3Absolute_AK8PFPuppi.txt to tarball
+DEBUG 2017-10-02 13:47:05,357: 	 Adding file Summer16_23Sep2016V3_MC_L1FastJet_AK4PFPuppi.txt to tarball
+DEBUG 2017-10-02 13:47:05,358: 	 Adding file Summer16_23Sep2016V3_MC_L2Relative_AK4PFPuppi.txt to tarball
+DEBUG 2017-10-02 13:47:05,458: 	 Adding file Summer16_23Sep2016V3_MC_L3Absolute_AK4PFPuppi.txt to tarball
+DEBUG 2017-10-02 13:47:05,486: 	 Uploading archive /afs/cern.ch/user/l/lewang/Xudong/Summer17/MC/CMSSW_9_2_0/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_Wprime_2500_weight_v2/inputs/f76cbea5-390f-4281-8a44-ed20094f8a01default.tgz (0.594727.1 MB) to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2017-10-02 13:47:06,237: 	 Loading required information from the environment
+DEBUG 2017-10-02 13:47:06,238: 	 Found CMSSW_9_2_0 for slc6_amd64_gcc530 with base /afs/cern.ch/user/l/lewang/Xudong/Summer17/MC/CMSSW_9_2_0
+DEBUG 2017-10-02 13:47:06,238: 	 Making tarball in /afs/cern.ch/user/l/lewang/Xudong/Summer17/MC/CMSSW_9_2_0/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_Wprime_2500_weight_v2/inputs/debugFiles.tgz
+DEBUG 2017-10-02 13:47:06,245: 	 Uploading archive /afs/cern.ch/user/l/lewang/Xudong/Summer17/MC/CMSSW_9_2_0/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_Wprime_2500_weight_v2/inputs/debugFiles.tgz (4 KB) to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2017-10-02 13:47:06,668: 	 Result uploading input files: 65534385e9fa5c91e285479a2c26cef3b84726b8a376a33667b6aa8c8f0be7d7.tar.gz 
+INFO 2017-10-02 13:47:06,669: 	 Sending the request to the server
+DEBUG 2017-10-02 13:47:06,669: 	 Submitting {'maxjobruntime': 1250, 'extrajdl': [], 'ignorelocality': 0, 'savelogsflag': 1, 'useparent': 0, 'asyncdest': 'T2_CH_CERN', 'algoargs': 10, 'cachefilename': '65534385e9fa5c91e285479a2c26cef3b84726b8a376a33667b6aa8c8f0be7d7.tar.gz', 'numcores': 1, 'addoutputfiles': [], 'generator': 'pythia', 'maxmemory': 2000, 'publishdbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', 'priority': 10, 'jobsw': 'CMSSW_9_2_0', 'edmoutfiles': [], 'userfiles': [], 'primarydataset': '', 'inputdata': '/WprimeToWZToWlepZhad_narrow_M-2500_13TeV-madgraph/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM', 'dryrun': 0, 'workflow': 'crab_Wprime_2500_weight_v2', 'cacheurl': u'https://cmsweb.cern.ch/crabcache', 'nonprodsw': 1, 'tfileoutfiles': ['RStreeEDBR_pickup.root'], 'oneEventMode': 0, 'debugfilename': '4c8350854817afd0512a81a0edc9ac8f9838183de71a86b1f7c935a2c3fb46a0.tar.gz', 'saveoutput': 1, 'publication': 0, 'jobarch': 'slc6_amd64_gcc530', 'totalunits': -1, 'splitalgo': 'FileBased', 'ignoreglobalblacklist': 0, 'nonvaliddata': 0, 'dbsurl': 'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', 'publishgroupname': 0, 'jobtype': 'Analysis', 'publishname2': 'Wprime_2500_weight_v2'} 
+DEBUG 2017-10-02 13:47:06,670: 	 Encoded submit request: maxjobruntime=1250&ignorelocality=0&savelogsflag=1&useparent=0&asyncdest=T2_CH_CERN&algoargs=10&cachefilename=65534385e9fa5c91e285479a2c26cef3b84726b8a376a33667b6aa8c8f0be7d7.tar.gz&numcores=1&generator=pythia&maxmemory=2000&publishdbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fphys03%2FDBSWriter&priority=10&jobsw=CMSSW_9_2_0&primarydataset=&inputdata=%2FWprimeToWZToWlepZhad_narrow_M-2500_13TeV-madgraph%2FRunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1%2FMINIAODSIM&dryrun=0&workflow=crab_Wprime_2500_weight_v2&cacheurl=https%3A%2F%2Fcmsweb.cern.ch%2Fcrabcache&nonprodsw=1&oneEventMode=0&debugfilename=4c8350854817afd0512a81a0edc9ac8f9838183de71a86b1f7c935a2c3fb46a0.tar.gz&saveoutput=1&publication=0&jobarch=slc6_amd64_gcc530&totalunits=-1&splitalgo=FileBased&ignoreglobalblacklist=0&nonvaliddata=0&dbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fglobal%2FDBSReader&publishgroupname=0&jobtype=Analysis&publishname2=Wprime_2500_weight_v2&tfileoutfiles=RStreeEDBR_pickup.root
+DEBUG 2017-10-02 13:47:07,096: 	 Result: {u'result': [{u'RequestName': u'171002_114707:lewang_crab_Wprime_2500_weight_v2'}]}
+INFO 2017-10-02 13:47:07,099: 	 Success: Your task has been delivered to the CRAB3 server.
+INFO 2017-10-02 13:47:07,099: 	 Task name: 171002_114707:lewang_crab_Wprime_2500_weight_v2
+INFO 2017-10-02 13:47:07,099: 	 Please use 'crab status' to check how the submission process proceeds.
+DEBUG 2017-10-02 13:47:07,099: 	 About to return
+INFO 2017-10-02 13:47:07,105: 	 Log file is /afs/cern.ch/user/l/lewang/Xudong/Summer17/MC/CMSSW_9_2_0/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_Wprime_2500_weight_v2/crab.log
+DEBUG 2017-10-02 14:03:06,564: 	 Executing command: 'status'
+DEBUG 2017-10-02 14:03:06,565: 	 Found CRAB cache file /afs/cern.ch/user/l/lewang/.crab3
+DEBUG 2017-10-02 14:03:06,573: 	 Checking credentials
+DEBUG 2017-10-02 14:03:06,576: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-10-02 14:03:06,576: 	 Getting proxy life time left
+DEBUG 2017-10-02 14:03:07,390: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 85526
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-02 14:03:08,096: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 85525
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-02 14:03:08,097: 	 Proxy valid for 23:45:26 hours
+DEBUG 2017-10-02 14:03:08,369: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-02 14:03:08,369: 	 Checking credentials
+DEBUG 2017-10-02 14:03:08,369: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-10-02 14:03:08,369: 	 Getting proxy life time left
+DEBUG 2017-10-02 14:03:09,078: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 85524
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-02 14:03:09,795: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 85524
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-02 14:03:09,795: 	 Proxy valid for 23:45:24 hours
+DEBUG 2017-10-02 14:03:10,173: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+DEBUG 2017-10-02 14:03:10,291: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-02 14:03:10,291: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-10-02 14:03:10,291: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang_cmsweb.cern.ch for credential name
+DEBUG 2017-10-02 14:03:10,495: 	 Executing : 
+ command : myproxy-info -l 1b9ed1fd5af45f6b0603ad12c45a57a42d266ac3 -s myproxy.cern.ch
+ output : username: 1b9ed1fd5af45f6b0603ad12c45a57a42d266ac3
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  timeleft: 558:53:06  (23.3 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-02 14:03:10,496: 	 Myproxy is valid: 2011986
+DEBUG 2017-10-02 14:03:10,496: 	 Command use: status
+DEBUG 2017-10-02 14:03:10,497: 	 Options use: ['-d', 'crab_Wprime_2500_weight_v2/']
+DEBUG 2017-10-02 14:03:10,875: 	 CRABClient version: 3.3.1707.patch1
+DEBUG 2017-10-02 14:03:10,876: 	 Instance is prod
+DEBUG 2017-10-02 14:03:10,876: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-10-02 14:03:10,876: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-10-02 14:03:11,213: 	 Got information from server oracle database: {u'result': [u'171002_114707:lewang_crab_Wprime_2500_weight_v2', u'None', u'SUBMITTED', u'2017-10-02 11:47:07.088836', u'None', u'2017-10-02 11:47:52.207771', u'None', u'CMSSW_9_2_0', u'slc6_amd64_gcc530', u'/WprimeToWZToWlepZhad_narrow_M-2500_13TeV-madgraph/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM', u'[]', u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 10, 'runs': [], 'lumis': []}", u'-1', u'65534385e9fa5c91e285479a2c26cef3b84726b8a376a33667b6aa8c8f0be7d7.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'lewang', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang', u'cms', u'None', u'None', u'Wprime_2500_weight_v2-00000000000000000000000000000000', u'T2_CH_CERN', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'F', u'Analysis', u'{}', u'[]', u'T', u'vocms052', u'[]', u'1250', u'1', u'2000', u'10', u'None', u'http://vocms0144.cern.ch/mon/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2', u'None', u'None', u'[]', u'[]', u'[]', u'pythia', u'[]', u"['RStreeEDBR_pickup.root']", u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'None', u'0', u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'crab3@vocms0144.cern.ch', u'F', u'[]', u'T', u'/store/user/lewang/', u'F', u'None', u'F', u'F', u'F', u'None', u'WprimeToWZToWlepZhad_narrow_M-2500_13TeV-madgraph', u'filetransfers', u'SUBMIT', u'13351399', u'4c8350854817afd0512a81a0edc9ac8f9838183de71a86b1f7c935a2c3fb46a0.tar.gz', u'188.184.91.100', u'F', u'None'], u'desc': {u'columns': [u'tm_taskname', u'panda_jobset_id', u'tm_task_status', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_totalunits', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_job_type', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_user_webdir', u'tm_activity', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_task_warnings', u'tm_generator', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_asourl', u'tm_events_per_lumi', u'tm_use_parent', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_publish_groupname', u'tm_nonvalid_input_dataset', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_asodb', u'tm_task_command', u'clusterid', u'tm_debug_files', u'tm_submitter_ip_addr', u'tm_ignore_global_blacklist', u'tm_last_publication']}}
+INFO 2017-10-02 14:03:11,214: 	 CRAB project directory:		/afs/cern.ch/user/l/lewang/Xudong/Summer17/MC/CMSSW_9_2_0/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_Wprime_2500_weight_v2
+INFO 2017-10-02 14:03:11,214: 	 Task name:			171002_114707:lewang_crab_Wprime_2500_weight_v2
+INFO 2017-10-02 14:03:11,214: 	 Grid scheduler:			crab3@vocms0144.cern.ch
+INFO 2017-10-02 14:03:11,214: 	 Status on the CRAB server:	SUBMITTED
+INFO 2017-10-02 14:03:11,214: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/171002_114707%3Alewang_crab_Wprime_2500_weight_v2
+INFO 2017-10-02 14:03:11,214: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=lewang&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=171002_114707%3Alewang_crab_Wprime_2500_weight_v2
+DEBUG 2017-10-02 14:03:11,215: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 13351399)
+DEBUG 2017-10-02 14:03:11,215: 	 Webdir is located at http://vocms0144.cern.ch/mon/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2
+DEBUG 2017-10-02 14:03:11,578: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0144/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2
+DEBUG 2017-10-02 14:03:11,578: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0144/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2/status_cache
+DEBUG 2017-10-02 14:03:11,899: 	 Got information from status cache file: {'1': {'Retries': 0, 'WallDurations': [8.0, 308.0], 'StartTimes': [1506945066.0], 'SubmitTimes': [1506944883.0], 'JobIds': ['13351402.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [670488], 'TotalUserCpuTimeHistory': [252.0], 'SiteHistory': ['Unknown', 'T2_US_Wisconsin'], 'TotalSysCpuTimeHistory': [8.0]}}
+INFO 2017-10-02 14:03:11,899: 	 Status on the scheduler:	SUBMITTED
+INFO 2017-10-02 14:03:11,899: 	 
+Jobs status:                    running       100.0% (1/1)
+INFO 2017-10-02 14:03:11,899: 	 
+No publication information (publication has been disabled in the CRAB configuration file)
+INFO 2017-10-02 14:03:11,917: 	 Log file is /afs/cern.ch/user/l/lewang/Xudong/Summer17/MC/CMSSW_9_2_0/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_Wprime_2500_weight_v2/crab.log
+DEBUG 2017-10-02 18:36:02,278: 	 Executing command: 'status'
+DEBUG 2017-10-02 18:36:02,278: 	 Found CRAB cache file /afs/cern.ch/user/l/lewang/.crab3
+DEBUG 2017-10-02 18:36:02,285: 	 Checking credentials
+DEBUG 2017-10-02 18:36:02,285: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-10-02 18:36:02,285: 	 Getting proxy life time left
+DEBUG 2017-10-02 18:36:02,989: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 85034
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-02 18:36:04,001: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 85033
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-02 18:36:04,001: 	 Proxy valid for 23:37:14 hours
+DEBUG 2017-10-02 18:36:04,338: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-02 18:36:04,338: 	 Checking credentials
+DEBUG 2017-10-02 18:36:04,339: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-10-02 18:36:04,339: 	 Getting proxy life time left
+DEBUG 2017-10-02 18:36:05,145: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 85031
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-02 18:36:05,759: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 85031
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-02 18:36:05,759: 	 Proxy valid for 23:37:11 hours
+DEBUG 2017-10-02 18:36:06,224: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+DEBUG 2017-10-02 18:36:06,335: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-02 18:36:06,335: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-10-02 18:36:06,335: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang_cmsweb.cern.ch for credential name
+DEBUG 2017-10-02 18:36:06,639: 	 Executing : 
+ command : myproxy-info -l 1b9ed1fd5af45f6b0603ad12c45a57a42d266ac3 -s myproxy.cern.ch
+ output : username: 1b9ed1fd5af45f6b0603ad12c45a57a42d266ac3
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  timeleft: 554:20:10  (23.1 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-02 18:36:06,640: 	 Myproxy is valid: 1995610
+DEBUG 2017-10-02 18:36:06,640: 	 Command use: status
+DEBUG 2017-10-02 18:36:06,640: 	 Options use: ['-d', 'crab_Wprime_2500_weight_v2/']
+DEBUG 2017-10-02 18:36:07,129: 	 CRABClient version: 3.3.1707.patch1
+DEBUG 2017-10-02 18:36:07,129: 	 Instance is prod
+DEBUG 2017-10-02 18:36:07,129: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-10-02 18:36:07,129: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-10-02 18:36:07,554: 	 Got information from server oracle database: {u'result': [u'171002_114707:lewang_crab_Wprime_2500_weight_v2', u'None', u'SUBMITTED', u'2017-10-02 11:47:07.088836', u'None', u'2017-10-02 11:47:52.207771', u'None', u'CMSSW_9_2_0', u'slc6_amd64_gcc530', u'/WprimeToWZToWlepZhad_narrow_M-2500_13TeV-madgraph/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM', u'[]', u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 10, 'runs': [], 'lumis': []}", u'-1', u'65534385e9fa5c91e285479a2c26cef3b84726b8a376a33667b6aa8c8f0be7d7.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'lewang', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang', u'cms', u'None', u'None', u'Wprime_2500_weight_v2-00000000000000000000000000000000', u'T2_CH_CERN', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'F', u'Analysis', u'{}', u'[]', u'T', u'vocms052', u'[]', u'1250', u'1', u'2000', u'10', u'None', u'http://vocms0144.cern.ch/mon/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2', u'None', u'None', u'[]', u'[]', u'[]', u'pythia', u'[]', u"['RStreeEDBR_pickup.root']", u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'None', u'0', u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'crab3@vocms0144.cern.ch', u'F', u'[]', u'T', u'/store/user/lewang/', u'F', u'None', u'F', u'F', u'F', u'None', u'WprimeToWZToWlepZhad_narrow_M-2500_13TeV-madgraph', u'filetransfers', u'SUBMIT', u'13351399', u'4c8350854817afd0512a81a0edc9ac8f9838183de71a86b1f7c935a2c3fb46a0.tar.gz', u'188.184.91.100', u'F', u'None'], u'desc': {u'columns': [u'tm_taskname', u'panda_jobset_id', u'tm_task_status', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_totalunits', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_job_type', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_user_webdir', u'tm_activity', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_task_warnings', u'tm_generator', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_asourl', u'tm_events_per_lumi', u'tm_use_parent', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_publish_groupname', u'tm_nonvalid_input_dataset', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_asodb', u'tm_task_command', u'clusterid', u'tm_debug_files', u'tm_submitter_ip_addr', u'tm_ignore_global_blacklist', u'tm_last_publication']}}
+INFO 2017-10-02 18:36:07,555: 	 CRAB project directory:		/afs/cern.ch/user/l/lewang/Xudong/Summer17/MC/CMSSW_9_2_0/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_Wprime_2500_weight_v2
+INFO 2017-10-02 18:36:07,555: 	 Task name:			171002_114707:lewang_crab_Wprime_2500_weight_v2
+INFO 2017-10-02 18:36:07,555: 	 Grid scheduler:			crab3@vocms0144.cern.ch
+INFO 2017-10-02 18:36:07,555: 	 Status on the CRAB server:	SUBMITTED
+INFO 2017-10-02 18:36:07,555: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/171002_114707%3Alewang_crab_Wprime_2500_weight_v2
+INFO 2017-10-02 18:36:07,555: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=lewang&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=171002_114707%3Alewang_crab_Wprime_2500_weight_v2
+DEBUG 2017-10-02 18:36:07,555: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 13351399)
+DEBUG 2017-10-02 18:36:07,555: 	 Webdir is located at http://vocms0144.cern.ch/mon/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2
+DEBUG 2017-10-02 18:36:07,940: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0144/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2
+DEBUG 2017-10-02 18:36:07,940: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0144/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2/status_cache
+DEBUG 2017-10-02 18:36:08,251: 	 Got information from status cache file: {'1': {'Retries': 0, 'WallDurations': [8.0, 2079.0], 'StartTimes': [1506945066.0], 'SubmitTimes': [1506944883.0], 'JobIds': ['13351402.0'], 'EndTimes': [1506947145.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [758668], 'TotalUserCpuTimeHistory': [1881], 'SiteHistory': ['Unknown', 'T2_US_Wisconsin'], 'TotalSysCpuTimeHistory': [40]}}
+INFO 2017-10-02 18:36:08,251: 	 Status on the scheduler:	COMPLETED
+INFO 2017-10-02 18:36:08,251: 	 
+Jobs status:                    finished      100.0% (1/1)
+INFO 2017-10-02 18:36:08,251: 	 
+No publication information (publication has been disabled in the CRAB configuration file)
+INFO 2017-10-02 18:36:08,292: 	 Log file is /afs/cern.ch/user/l/lewang/Xudong/Summer17/MC/CMSSW_9_2_0/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_Wprime_2500_weight_v2/crab.log
+DEBUG 2017-10-02 20:31:06,082: 	 Executing command: 'status'
+DEBUG 2017-10-02 20:31:06,082: 	 Found CRAB cache file /afs/cern.ch/user/l/lewang/.crab3
+DEBUG 2017-10-02 20:31:06,101: 	 Checking credentials
+DEBUG 2017-10-02 20:31:06,103: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-10-02 20:31:06,103: 	 Getting proxy life time left
+DEBUG 2017-10-02 20:31:07,116: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 85960
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-02 20:31:08,038: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 85960
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-02 20:31:08,039: 	 Proxy valid for 23:52:40 hours
+DEBUG 2017-10-02 20:31:08,275: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-02 20:31:08,276: 	 Checking credentials
+DEBUG 2017-10-02 20:31:08,276: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-10-02 20:31:08,276: 	 Getting proxy life time left
+DEBUG 2017-10-02 20:31:09,097: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 85959
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-02 20:31:10,034: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 85958
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-02 20:31:10,035: 	 Proxy valid for 23:52:39 hours
+DEBUG 2017-10-02 20:31:10,443: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+DEBUG 2017-10-02 20:31:10,557: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-02 20:31:10,557: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-10-02 20:31:10,557: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang_cmsweb.cern.ch for credential name
+DEBUG 2017-10-02 20:31:10,775: 	 Executing : 
+ command : myproxy-info -l 1b9ed1fd5af45f6b0603ad12c45a57a42d266ac3 -s myproxy.cern.ch
+ output : username: 1b9ed1fd5af45f6b0603ad12c45a57a42d266ac3
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  timeleft: 552:25:06  (23.0 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-02 20:31:10,778: 	 Myproxy is valid: 1988706
+DEBUG 2017-10-02 20:31:10,778: 	 Command use: status
+DEBUG 2017-10-02 20:31:10,778: 	 Options use: ['-d', 'crab_Wprime_2500_weight_v2/']
+DEBUG 2017-10-02 20:31:11,135: 	 CRABClient version: 3.3.1707.patch1
+DEBUG 2017-10-02 20:31:11,136: 	 Instance is prod
+DEBUG 2017-10-02 20:31:11,136: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-10-02 20:31:11,136: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-10-02 20:31:11,586: 	 Got information from server oracle database: {u'result': [u'171002_114707:lewang_crab_Wprime_2500_weight_v2', u'None', u'SUBMITTED', u'2017-10-02 11:47:07.088836', u'None', u'2017-10-02 11:47:52.207771', u'None', u'CMSSW_9_2_0', u'slc6_amd64_gcc530', u'/WprimeToWZToWlepZhad_narrow_M-2500_13TeV-madgraph/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM', u'[]', u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 10, 'runs': [], 'lumis': []}", u'-1', u'65534385e9fa5c91e285479a2c26cef3b84726b8a376a33667b6aa8c8f0be7d7.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'lewang', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang', u'cms', u'None', u'None', u'Wprime_2500_weight_v2-00000000000000000000000000000000', u'T2_CH_CERN', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'F', u'Analysis', u'{}', u'[]', u'T', u'vocms052', u'[]', u'1250', u'1', u'2000', u'10', u'None', u'http://vocms0144.cern.ch/mon/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2', u'None', u'None', u'[]', u'[]', u'[]', u'pythia', u'[]', u"['RStreeEDBR_pickup.root']", u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'None', u'0', u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'crab3@vocms0144.cern.ch', u'F', u'[]', u'T', u'/store/user/lewang/', u'F', u'None', u'F', u'F', u'F', u'None', u'WprimeToWZToWlepZhad_narrow_M-2500_13TeV-madgraph', u'filetransfers', u'SUBMIT', u'13351399', u'4c8350854817afd0512a81a0edc9ac8f9838183de71a86b1f7c935a2c3fb46a0.tar.gz', u'188.184.91.100', u'F', u'None'], u'desc': {u'columns': [u'tm_taskname', u'panda_jobset_id', u'tm_task_status', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_totalunits', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_job_type', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_user_webdir', u'tm_activity', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_task_warnings', u'tm_generator', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_asourl', u'tm_events_per_lumi', u'tm_use_parent', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_publish_groupname', u'tm_nonvalid_input_dataset', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_asodb', u'tm_task_command', u'clusterid', u'tm_debug_files', u'tm_submitter_ip_addr', u'tm_ignore_global_blacklist', u'tm_last_publication']}}
+INFO 2017-10-02 20:31:11,587: 	 CRAB project directory:		/afs/cern.ch/user/l/lewang/Xudong/Summer17/MC/CMSSW_9_2_0/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_Wprime_2500_weight_v2
+INFO 2017-10-02 20:31:11,587: 	 Task name:			171002_114707:lewang_crab_Wprime_2500_weight_v2
+INFO 2017-10-02 20:31:11,587: 	 Grid scheduler:			crab3@vocms0144.cern.ch
+INFO 2017-10-02 20:31:11,587: 	 Status on the CRAB server:	SUBMITTED
+INFO 2017-10-02 20:31:11,587: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/171002_114707%3Alewang_crab_Wprime_2500_weight_v2
+INFO 2017-10-02 20:31:11,587: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=lewang&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=171002_114707%3Alewang_crab_Wprime_2500_weight_v2
+DEBUG 2017-10-02 20:31:11,587: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 13351399)
+DEBUG 2017-10-02 20:31:11,587: 	 Webdir is located at http://vocms0144.cern.ch/mon/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2
+DEBUG 2017-10-02 20:31:11,972: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0144/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2
+DEBUG 2017-10-02 20:31:11,972: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0144/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2/status_cache
+DEBUG 2017-10-02 20:31:12,303: 	 Got information from status cache file: {'1': {'Retries': 0, 'WallDurations': [8.0, 2079.0], 'StartTimes': [1506945066.0], 'SubmitTimes': [1506944883.0], 'JobIds': ['13351402.0'], 'EndTimes': [1506947145.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [758668], 'TotalUserCpuTimeHistory': [1881], 'SiteHistory': ['Unknown', 'T2_US_Wisconsin'], 'TotalSysCpuTimeHistory': [40]}}
+INFO 2017-10-02 20:31:12,303: 	 Status on the scheduler:	COMPLETED
+INFO 2017-10-02 20:31:12,303: 	 
+Jobs status:                    finished      100.0% (1/1)
+INFO 2017-10-02 20:31:12,303: 	 
+No publication information (publication has been disabled in the CRAB configuration file)
+INFO 2017-10-02 20:31:12,336: 	 Log file is /afs/cern.ch/user/l/lewang/Xudong/Summer17/MC/CMSSW_9_2_0/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_Wprime_2500_weight_v2/crab.log
+DEBUG 2017-10-03 05:10:13,464: 	 Executing command: 'status'
+DEBUG 2017-10-03 05:10:13,465: 	 Found CRAB cache file /afs/cern.ch/user/l/lewang/.crab3
+DEBUG 2017-10-03 05:10:13,472: 	 Checking credentials
+DEBUG 2017-10-03 05:10:13,472: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-10-03 05:10:13,472: 	 Getting proxy life time left
+DEBUG 2017-10-03 05:10:14,077: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 86091
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-03 05:10:14,683: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 86091
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-03 05:10:14,684: 	 Proxy valid for 23:54:51 hours
+DEBUG 2017-10-03 05:10:14,940: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-03 05:10:14,940: 	 Checking credentials
+DEBUG 2017-10-03 05:10:14,940: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-10-03 05:10:14,941: 	 Getting proxy life time left
+DEBUG 2017-10-03 05:10:15,647: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 86090
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-03 05:10:16,261: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 86089
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-03 05:10:16,261: 	 Proxy valid for 23:54:50 hours
+DEBUG 2017-10-03 05:10:16,623: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+DEBUG 2017-10-03 05:10:16,733: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-03 05:10:16,733: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-10-03 05:10:16,733: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang_cmsweb.cern.ch for credential name
+DEBUG 2017-10-03 05:10:17,038: 	 Executing : 
+ command : myproxy-info -l 1b9ed1fd5af45f6b0603ad12c45a57a42d266ac3 -s myproxy.cern.ch
+ output : username: 1b9ed1fd5af45f6b0603ad12c45a57a42d266ac3
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  timeleft: 543:46:00  (22.7 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-03 05:10:17,039: 	 Myproxy is valid: 1957560
+DEBUG 2017-10-03 05:10:17,039: 	 Command use: status
+DEBUG 2017-10-03 05:10:17,039: 	 Options use: ['-d', 'crab_Wprime_2500_weight_v2/']
+DEBUG 2017-10-03 05:10:17,451: 	 CRABClient version: 3.3.1707.patch1
+DEBUG 2017-10-03 05:10:17,451: 	 Instance is prod
+DEBUG 2017-10-03 05:10:17,451: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-10-03 05:10:17,451: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-10-03 05:10:17,823: 	 Got information from server oracle database: {u'result': [u'171002_114707:lewang_crab_Wprime_2500_weight_v2', u'None', u'SUBMITTED', u'2017-10-02 11:47:07.088836', u'None', u'2017-10-02 11:47:52.207771', u'None', u'CMSSW_9_2_0', u'slc6_amd64_gcc530', u'/WprimeToWZToWlepZhad_narrow_M-2500_13TeV-madgraph/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM', u'[]', u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 10, 'runs': [], 'lumis': []}", u'-1', u'65534385e9fa5c91e285479a2c26cef3b84726b8a376a33667b6aa8c8f0be7d7.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'lewang', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang', u'cms', u'None', u'None', u'Wprime_2500_weight_v2-00000000000000000000000000000000', u'T2_CH_CERN', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'F', u'Analysis', u'{}', u'[]', u'T', u'vocms052', u'[]', u'1250', u'1', u'2000', u'10', u'None', u'http://vocms0144.cern.ch/mon/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2', u'None', u'None', u'[]', u'[]', u'[]', u'pythia', u'[]', u"['RStreeEDBR_pickup.root']", u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'None', u'0', u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'crab3@vocms0144.cern.ch', u'F', u'[]', u'T', u'/store/user/lewang/', u'F', u'None', u'F', u'F', u'F', u'None', u'WprimeToWZToWlepZhad_narrow_M-2500_13TeV-madgraph', u'filetransfers', u'SUBMIT', u'13351399', u'4c8350854817afd0512a81a0edc9ac8f9838183de71a86b1f7c935a2c3fb46a0.tar.gz', u'188.184.91.100', u'F', u'None'], u'desc': {u'columns': [u'tm_taskname', u'panda_jobset_id', u'tm_task_status', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_totalunits', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_job_type', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_user_webdir', u'tm_activity', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_task_warnings', u'tm_generator', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_asourl', u'tm_events_per_lumi', u'tm_use_parent', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_publish_groupname', u'tm_nonvalid_input_dataset', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_asodb', u'tm_task_command', u'clusterid', u'tm_debug_files', u'tm_submitter_ip_addr', u'tm_ignore_global_blacklist', u'tm_last_publication']}}
+INFO 2017-10-03 05:10:17,823: 	 CRAB project directory:		/afs/cern.ch/user/l/lewang/Xudong/Summer17/MC/CMSSW_9_2_0/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_Wprime_2500_weight_v2
+INFO 2017-10-03 05:10:17,823: 	 Task name:			171002_114707:lewang_crab_Wprime_2500_weight_v2
+INFO 2017-10-03 05:10:17,823: 	 Grid scheduler:			crab3@vocms0144.cern.ch
+INFO 2017-10-03 05:10:17,824: 	 Status on the CRAB server:	SUBMITTED
+INFO 2017-10-03 05:10:17,824: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/171002_114707%3Alewang_crab_Wprime_2500_weight_v2
+INFO 2017-10-03 05:10:17,824: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=lewang&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=171002_114707%3Alewang_crab_Wprime_2500_weight_v2
+DEBUG 2017-10-03 05:10:17,824: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 13351399)
+DEBUG 2017-10-03 05:10:17,824: 	 Webdir is located at http://vocms0144.cern.ch/mon/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2
+DEBUG 2017-10-03 05:10:18,190: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0144/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2
+DEBUG 2017-10-03 05:10:18,190: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0144/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2/status_cache
+DEBUG 2017-10-03 05:10:18,690: 	 Got information from status cache file: {'1': {'Retries': 0, 'WallDurations': [8.0, 2079.0], 'StartTimes': [1506945066.0], 'SubmitTimes': [1506944883.0], 'JobIds': ['13351402.0'], 'EndTimes': [1506947145.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [758668], 'TotalUserCpuTimeHistory': [1881], 'SiteHistory': ['Unknown', 'T2_US_Wisconsin'], 'TotalSysCpuTimeHistory': [40]}}
+INFO 2017-10-03 05:10:18,690: 	 Status on the scheduler:	COMPLETED
+INFO 2017-10-03 05:10:18,690: 	 
+Jobs status:                    finished      100.0% (1/1)
+INFO 2017-10-03 05:10:18,690: 	 
+No publication information (publication has been disabled in the CRAB configuration file)
+INFO 2017-10-03 05:10:18,711: 	 Log file is /afs/cern.ch/user/l/lewang/Xudong/Summer17/MC/CMSSW_9_2_0/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_Wprime_2500_weight_v2/crab.log
+DEBUG 2017-10-03 05:30:09,573: 	 Executing command: 'status'
+DEBUG 2017-10-03 05:30:09,573: 	 Found CRAB cache file /afs/cern.ch/user/l/lewang/.crab3
+DEBUG 2017-10-03 05:30:09,581: 	 Checking credentials
+DEBUG 2017-10-03 05:30:09,581: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-10-03 05:30:09,581: 	 Getting proxy life time left
+DEBUG 2017-10-03 05:30:10,290: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 85768
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-03 05:30:10,996: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 85767
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-03 05:30:10,997: 	 Proxy valid for 23:49:28 hours
+DEBUG 2017-10-03 05:30:11,246: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-03 05:30:11,247: 	 Checking credentials
+DEBUG 2017-10-03 05:30:11,247: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-10-03 05:30:11,247: 	 Getting proxy life time left
+DEBUG 2017-10-03 05:30:11,852: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 85767
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-03 05:30:12,660: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 85765
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-03 05:30:12,660: 	 Proxy valid for 23:49:27 hours
+DEBUG 2017-10-03 05:30:12,997: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+DEBUG 2017-10-03 05:30:13,108: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-03 05:30:13,108: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-10-03 05:30:13,108: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang_cmsweb.cern.ch for credential name
+DEBUG 2017-10-03 05:30:13,412: 	 Executing : 
+ command : myproxy-info -l 1b9ed1fd5af45f6b0603ad12c45a57a42d266ac3 -s myproxy.cern.ch
+ output : username: 1b9ed1fd5af45f6b0603ad12c45a57a42d266ac3
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  timeleft: 543:26:03  (22.6 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-03 05:30:13,413: 	 Myproxy is valid: 1956363
+DEBUG 2017-10-03 05:30:13,413: 	 Command use: status
+DEBUG 2017-10-03 05:30:13,413: 	 Options use: ['-d', 'crab_Wprime_2500_weight_v2/']
+DEBUG 2017-10-03 05:30:13,756: 	 CRABClient version: 3.3.1707.patch1
+DEBUG 2017-10-03 05:30:13,757: 	 Instance is prod
+DEBUG 2017-10-03 05:30:13,757: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-10-03 05:30:13,757: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-10-03 05:30:14,152: 	 Got information from server oracle database: {u'result': [u'171002_114707:lewang_crab_Wprime_2500_weight_v2', u'None', u'SUBMITTED', u'2017-10-02 11:47:07.088836', u'None', u'2017-10-02 11:47:52.207771', u'None', u'CMSSW_9_2_0', u'slc6_amd64_gcc530', u'/WprimeToWZToWlepZhad_narrow_M-2500_13TeV-madgraph/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM', u'[]', u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 10, 'runs': [], 'lumis': []}", u'-1', u'65534385e9fa5c91e285479a2c26cef3b84726b8a376a33667b6aa8c8f0be7d7.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'lewang', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang', u'cms', u'None', u'None', u'Wprime_2500_weight_v2-00000000000000000000000000000000', u'T2_CH_CERN', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'F', u'Analysis', u'{}', u'[]', u'T', u'vocms052', u'[]', u'1250', u'1', u'2000', u'10', u'None', u'http://vocms0144.cern.ch/mon/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2', u'None', u'None', u'[]', u'[]', u'[]', u'pythia', u'[]', u"['RStreeEDBR_pickup.root']", u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'None', u'0', u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'crab3@vocms0144.cern.ch', u'F', u'[]', u'T', u'/store/user/lewang/', u'F', u'None', u'F', u'F', u'F', u'None', u'WprimeToWZToWlepZhad_narrow_M-2500_13TeV-madgraph', u'filetransfers', u'SUBMIT', u'13351399', u'4c8350854817afd0512a81a0edc9ac8f9838183de71a86b1f7c935a2c3fb46a0.tar.gz', u'188.184.91.100', u'F', u'None'], u'desc': {u'columns': [u'tm_taskname', u'panda_jobset_id', u'tm_task_status', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_totalunits', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_job_type', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_user_webdir', u'tm_activity', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_task_warnings', u'tm_generator', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_asourl', u'tm_events_per_lumi', u'tm_use_parent', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_publish_groupname', u'tm_nonvalid_input_dataset', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_asodb', u'tm_task_command', u'clusterid', u'tm_debug_files', u'tm_submitter_ip_addr', u'tm_ignore_global_blacklist', u'tm_last_publication']}}
+INFO 2017-10-03 05:30:14,152: 	 CRAB project directory:		/afs/cern.ch/user/l/lewang/Xudong/Summer17/MC/CMSSW_9_2_0/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_Wprime_2500_weight_v2
+INFO 2017-10-03 05:30:14,153: 	 Task name:			171002_114707:lewang_crab_Wprime_2500_weight_v2
+INFO 2017-10-03 05:30:14,153: 	 Grid scheduler:			crab3@vocms0144.cern.ch
+INFO 2017-10-03 05:30:14,153: 	 Status on the CRAB server:	SUBMITTED
+INFO 2017-10-03 05:30:14,153: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/171002_114707%3Alewang_crab_Wprime_2500_weight_v2
+INFO 2017-10-03 05:30:14,153: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=lewang&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=171002_114707%3Alewang_crab_Wprime_2500_weight_v2
+DEBUG 2017-10-03 05:30:14,153: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 13351399)
+DEBUG 2017-10-03 05:30:14,153: 	 Webdir is located at http://vocms0144.cern.ch/mon/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2
+DEBUG 2017-10-03 05:30:14,492: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0144/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2
+DEBUG 2017-10-03 05:30:14,492: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0144/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2/status_cache
+DEBUG 2017-10-03 05:30:14,803: 	 Got information from status cache file: {'1': {'Retries': 0, 'WallDurations': [8.0, 2079.0], 'StartTimes': [1506945066.0], 'SubmitTimes': [1506944883.0], 'JobIds': ['13351402.0'], 'EndTimes': [1506947145.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [758668], 'TotalUserCpuTimeHistory': [1881], 'SiteHistory': ['Unknown', 'T2_US_Wisconsin'], 'TotalSysCpuTimeHistory': [40]}}
+INFO 2017-10-03 05:30:14,803: 	 Status on the scheduler:	COMPLETED
+INFO 2017-10-03 05:30:14,803: 	 
+Jobs status:                    finished      100.0% (1/1)
+INFO 2017-10-03 05:30:14,803: 	 
+No publication information (publication has been disabled in the CRAB configuration file)
+INFO 2017-10-03 05:30:14,814: 	 Log file is /afs/cern.ch/user/l/lewang/Xudong/Summer17/MC/CMSSW_9_2_0/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_Wprime_2500_weight_v2/crab.log
+DEBUG 2017-10-03 11:41:28,978: 	 Executing command: 'status'
+DEBUG 2017-10-03 11:41:28,979: 	 Found CRAB cache file /afs/cern.ch/user/l/lewang/.crab3
+DEBUG 2017-10-03 11:41:28,987: 	 Checking credentials
+DEBUG 2017-10-03 11:41:28,987: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-10-03 11:41:28,987: 	 Getting proxy life time left
+DEBUG 2017-10-03 11:41:30,198: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 86020
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-03 11:41:30,906: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 86019
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-03 11:41:30,906: 	 Proxy valid for 23:53:40 hours
+DEBUG 2017-10-03 11:41:31,085: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-03 11:41:31,086: 	 Checking credentials
+DEBUG 2017-10-03 11:41:31,086: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-10-03 11:41:31,087: 	 Getting proxy life time left
+DEBUG 2017-10-03 11:41:32,005: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 86019
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-03 11:41:32,813: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 86017
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-03 11:41:32,814: 	 Proxy valid for 23:53:39 hours
+DEBUG 2017-10-03 11:41:33,200: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+DEBUG 2017-10-03 11:41:33,310: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-03 11:41:33,311: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-10-03 11:41:33,311: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang_cmsweb.cern.ch for credential name
+DEBUG 2017-10-03 11:41:33,519: 	 Executing : 
+ command : myproxy-info -l 1b9ed1fd5af45f6b0603ad12c45a57a42d266ac3 -s myproxy.cern.ch
+ output : username: 1b9ed1fd5af45f6b0603ad12c45a57a42d266ac3
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  timeleft: 537:14:43  (22.4 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-03 11:41:33,520: 	 Myproxy is valid: 1934083
+DEBUG 2017-10-03 11:41:33,520: 	 Command use: status
+DEBUG 2017-10-03 11:41:33,521: 	 Options use: ['-d', 'crab_Wprime_2500_weight_v2/']
+DEBUG 2017-10-03 11:41:33,982: 	 CRABClient version: 3.3.1707.patch1
+DEBUG 2017-10-03 11:41:33,982: 	 Instance is prod
+DEBUG 2017-10-03 11:41:33,982: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-10-03 11:41:33,982: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-10-03 11:41:34,446: 	 Got information from server oracle database: {u'result': [u'171002_114707:lewang_crab_Wprime_2500_weight_v2', u'None', u'SUBMITTED', u'2017-10-02 11:47:07.088836', u'None', u'2017-10-02 11:47:52.207771', u'None', u'CMSSW_9_2_0', u'slc6_amd64_gcc530', u'/WprimeToWZToWlepZhad_narrow_M-2500_13TeV-madgraph/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM', u'[]', u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 10, 'runs': [], 'lumis': []}", u'-1', u'65534385e9fa5c91e285479a2c26cef3b84726b8a376a33667b6aa8c8f0be7d7.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'lewang', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang', u'cms', u'None', u'None', u'Wprime_2500_weight_v2-00000000000000000000000000000000', u'T2_CH_CERN', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'F', u'Analysis', u'{}', u'[]', u'T', u'vocms052', u'[]', u'1250', u'1', u'2000', u'10', u'None', u'http://vocms0144.cern.ch/mon/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2', u'None', u'None', u'[]', u'[]', u'[]', u'pythia', u'[]', u"['RStreeEDBR_pickup.root']", u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'None', u'0', u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'crab3@vocms0144.cern.ch', u'F', u'[]', u'T', u'/store/user/lewang/', u'F', u'None', u'F', u'F', u'F', u'None', u'WprimeToWZToWlepZhad_narrow_M-2500_13TeV-madgraph', u'filetransfers', u'SUBMIT', u'13351399', u'4c8350854817afd0512a81a0edc9ac8f9838183de71a86b1f7c935a2c3fb46a0.tar.gz', u'188.184.91.100', u'F', u'None'], u'desc': {u'columns': [u'tm_taskname', u'panda_jobset_id', u'tm_task_status', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_totalunits', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_job_type', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_user_webdir', u'tm_activity', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_task_warnings', u'tm_generator', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_asourl', u'tm_events_per_lumi', u'tm_use_parent', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_publish_groupname', u'tm_nonvalid_input_dataset', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_asodb', u'tm_task_command', u'clusterid', u'tm_debug_files', u'tm_submitter_ip_addr', u'tm_ignore_global_blacklist', u'tm_last_publication']}}
+INFO 2017-10-03 11:41:34,447: 	 CRAB project directory:		/afs/cern.ch/user/l/lewang/Xudong/Summer17/MC/CMSSW_9_2_0/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_Wprime_2500_weight_v2
+INFO 2017-10-03 11:41:34,447: 	 Task name:			171002_114707:lewang_crab_Wprime_2500_weight_v2
+INFO 2017-10-03 11:41:34,447: 	 Grid scheduler:			crab3@vocms0144.cern.ch
+INFO 2017-10-03 11:41:34,448: 	 Status on the CRAB server:	SUBMITTED
+INFO 2017-10-03 11:41:34,448: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/171002_114707%3Alewang_crab_Wprime_2500_weight_v2
+INFO 2017-10-03 11:41:34,448: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=lewang&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=171002_114707%3Alewang_crab_Wprime_2500_weight_v2
+DEBUG 2017-10-03 11:41:34,448: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 13351399)
+DEBUG 2017-10-03 11:41:34,448: 	 Webdir is located at http://vocms0144.cern.ch/mon/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2
+DEBUG 2017-10-03 11:41:34,870: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0144/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2
+DEBUG 2017-10-03 11:41:34,871: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0144/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2/status_cache
+DEBUG 2017-10-03 11:41:35,305: 	 Got information from status cache file: {'1': {'Retries': 0, 'WallDurations': [8.0, 2079.0], 'StartTimes': [1506945066.0], 'SubmitTimes': [1506944883.0], 'JobIds': ['13351402.0'], 'EndTimes': [1506947145.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [758668], 'TotalUserCpuTimeHistory': [1881], 'SiteHistory': ['Unknown', 'T2_US_Wisconsin'], 'TotalSysCpuTimeHistory': [40]}}
+INFO 2017-10-03 11:41:35,305: 	 Status on the scheduler:	COMPLETED
+INFO 2017-10-03 11:41:35,305: 	 
+Jobs status:                    finished      100.0% (1/1)
+INFO 2017-10-03 11:41:35,310: 	 
+No publication information (publication has been disabled in the CRAB configuration file)
+INFO 2017-10-03 11:41:35,361: 	 Log file is /afs/cern.ch/user/l/lewang/Xudong/Summer17/MC/CMSSW_9_2_0/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_Wprime_2500_weight_v2/crab.log
+DEBUG 2017-10-03 11:48:16,411: 	 Executing command: 'status'
+DEBUG 2017-10-03 11:48:16,411: 	 Found CRAB cache file /afs/cern.ch/user/l/lewang/.crab3
+DEBUG 2017-10-03 11:48:16,418: 	 Checking credentials
+DEBUG 2017-10-03 11:48:16,419: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-10-03 11:48:16,419: 	 Getting proxy life time left
+DEBUG 2017-10-03 11:48:17,136: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 85613
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-03 11:48:17,847: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 85612
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-03 11:48:17,848: 	 Proxy valid for 23:46:53 hours
+DEBUG 2017-10-03 11:48:18,063: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-03 11:48:18,064: 	 Checking credentials
+DEBUG 2017-10-03 11:48:18,064: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-10-03 11:48:18,064: 	 Getting proxy life time left
+DEBUG 2017-10-03 11:48:18,873: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 85612
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-03 11:48:19,689: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 85610
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-03 11:48:19,690: 	 Proxy valid for 23:46:52 hours
+DEBUG 2017-10-03 11:48:20,103: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+DEBUG 2017-10-03 11:48:20,249: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-03 11:48:20,249: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-10-03 11:48:20,249: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang_cmsweb.cern.ch for credential name
+DEBUG 2017-10-03 11:48:20,455: 	 Executing : 
+ command : myproxy-info -l 1b9ed1fd5af45f6b0603ad12c45a57a42d266ac3 -s myproxy.cern.ch
+ output : username: 1b9ed1fd5af45f6b0603ad12c45a57a42d266ac3
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  timeleft: 537:07:56  (22.4 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-03 11:48:20,467: 	 Myproxy is valid: 1933676
+DEBUG 2017-10-03 11:48:20,467: 	 Command use: status
+DEBUG 2017-10-03 11:48:20,467: 	 Options use: ['-d', 'crab_Wprime_2500_weight_v2/']
+DEBUG 2017-10-03 11:48:21,065: 	 CRABClient version: 3.3.1707.patch1
+DEBUG 2017-10-03 11:48:21,065: 	 Instance is prod
+DEBUG 2017-10-03 11:48:21,065: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-10-03 11:48:21,065: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-10-03 11:48:21,426: 	 Got information from server oracle database: {u'result': [u'171002_114707:lewang_crab_Wprime_2500_weight_v2', u'None', u'SUBMITTED', u'2017-10-02 11:47:07.088836', u'None', u'2017-10-02 11:47:52.207771', u'None', u'CMSSW_9_2_0', u'slc6_amd64_gcc530', u'/WprimeToWZToWlepZhad_narrow_M-2500_13TeV-madgraph/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM', u'[]', u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 10, 'runs': [], 'lumis': []}", u'-1', u'65534385e9fa5c91e285479a2c26cef3b84726b8a376a33667b6aa8c8f0be7d7.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'lewang', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang', u'cms', u'None', u'None', u'Wprime_2500_weight_v2-00000000000000000000000000000000', u'T2_CH_CERN', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'F', u'Analysis', u'{}', u'[]', u'T', u'vocms052', u'[]', u'1250', u'1', u'2000', u'10', u'None', u'http://vocms0144.cern.ch/mon/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2', u'None', u'None', u'[]', u'[]', u'[]', u'pythia', u'[]', u"['RStreeEDBR_pickup.root']", u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'None', u'0', u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'crab3@vocms0144.cern.ch', u'F', u'[]', u'T', u'/store/user/lewang/', u'F', u'None', u'F', u'F', u'F', u'None', u'WprimeToWZToWlepZhad_narrow_M-2500_13TeV-madgraph', u'filetransfers', u'SUBMIT', u'13351399', u'4c8350854817afd0512a81a0edc9ac8f9838183de71a86b1f7c935a2c3fb46a0.tar.gz', u'188.184.91.100', u'F', u'None'], u'desc': {u'columns': [u'tm_taskname', u'panda_jobset_id', u'tm_task_status', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_totalunits', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_job_type', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_user_webdir', u'tm_activity', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_task_warnings', u'tm_generator', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_asourl', u'tm_events_per_lumi', u'tm_use_parent', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_publish_groupname', u'tm_nonvalid_input_dataset', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_asodb', u'tm_task_command', u'clusterid', u'tm_debug_files', u'tm_submitter_ip_addr', u'tm_ignore_global_blacklist', u'tm_last_publication']}}
+INFO 2017-10-03 11:48:21,427: 	 CRAB project directory:		/afs/cern.ch/user/l/lewang/Xudong/Summer17/MC/CMSSW_9_2_0/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_Wprime_2500_weight_v2
+INFO 2017-10-03 11:48:21,427: 	 Task name:			171002_114707:lewang_crab_Wprime_2500_weight_v2
+INFO 2017-10-03 11:48:21,427: 	 Grid scheduler:			crab3@vocms0144.cern.ch
+INFO 2017-10-03 11:48:21,427: 	 Status on the CRAB server:	SUBMITTED
+INFO 2017-10-03 11:48:21,427: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/171002_114707%3Alewang_crab_Wprime_2500_weight_v2
+INFO 2017-10-03 11:48:21,427: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=lewang&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=171002_114707%3Alewang_crab_Wprime_2500_weight_v2
+DEBUG 2017-10-03 11:48:21,427: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 13351399)
+DEBUG 2017-10-03 11:48:21,427: 	 Webdir is located at http://vocms0144.cern.ch/mon/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2
+DEBUG 2017-10-03 11:48:21,829: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0144/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2
+DEBUG 2017-10-03 11:48:21,829: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0144/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2/status_cache
+DEBUG 2017-10-03 11:48:22,164: 	 Got information from status cache file: {'1': {'Retries': 0, 'WallDurations': [8.0, 2079.0], 'StartTimes': [1506945066.0], 'SubmitTimes': [1506944883.0], 'JobIds': ['13351402.0'], 'EndTimes': [1506947145.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [758668], 'TotalUserCpuTimeHistory': [1881], 'SiteHistory': ['Unknown', 'T2_US_Wisconsin'], 'TotalSysCpuTimeHistory': [40]}}
+INFO 2017-10-03 11:48:22,164: 	 Status on the scheduler:	COMPLETED
+INFO 2017-10-03 11:48:22,164: 	 
+Jobs status:                    finished      100.0% (1/1)
+INFO 2017-10-03 11:48:22,165: 	 
+No publication information (publication has been disabled in the CRAB configuration file)
+INFO 2017-10-03 11:48:22,184: 	 Log file is /afs/cern.ch/user/l/lewang/Xudong/Summer17/MC/CMSSW_9_2_0/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_Wprime_2500_weight_v2/crab.log
+DEBUG 2017-10-03 15:04:16,852: 	 Executing command: 'status'
+DEBUG 2017-10-03 15:04:16,852: 	 Found CRAB cache file /afs/cern.ch/user/l/lewang/.crab3
+DEBUG 2017-10-03 15:04:16,857: 	 Checking credentials
+DEBUG 2017-10-03 15:04:16,857: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-10-03 15:04:16,857: 	 Getting proxy life time left
+DEBUG 2017-10-03 15:04:18,063: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 86308
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-03 15:04:18,569: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 86307
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-03 15:04:18,569: 	 Proxy valid for 23:58:28 hours
+DEBUG 2017-10-03 15:04:18,746: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-03 15:04:18,746: 	 Checking credentials
+DEBUG 2017-10-03 15:04:18,746: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-10-03 15:04:18,746: 	 Getting proxy life time left
+DEBUG 2017-10-03 15:04:19,351: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 86306
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-03 15:04:19,856: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 86306
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-03 15:04:19,856: 	 Proxy valid for 23:58:26 hours
+DEBUG 2017-10-03 15:04:20,205: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+DEBUG 2017-10-03 15:04:20,313: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-03 15:04:20,313: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-10-03 15:04:20,313: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang_cmsweb.cern.ch for credential name
+DEBUG 2017-10-03 15:04:20,417: 	 Executing : 
+ command : myproxy-info -l 1b9ed1fd5af45f6b0603ad12c45a57a42d266ac3 -s myproxy.cern.ch
+ output : username: 1b9ed1fd5af45f6b0603ad12c45a57a42d266ac3
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  timeleft: 533:51:56  (22.2 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-03 15:04:20,418: 	 Myproxy is valid: 1921916
+DEBUG 2017-10-03 15:04:20,418: 	 Command use: status
+DEBUG 2017-10-03 15:04:20,418: 	 Options use: ['-d', 'crab_Wprime_2500_weight_v2/']
+DEBUG 2017-10-03 15:04:20,891: 	 CRABClient version: 3.3.1707.patch1
+DEBUG 2017-10-03 15:04:20,891: 	 Instance is prod
+DEBUG 2017-10-03 15:04:20,891: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-10-03 15:04:20,891: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-10-03 15:04:21,260: 	 Got information from server oracle database: {u'result': [u'171002_114707:lewang_crab_Wprime_2500_weight_v2', u'None', u'SUBMITTED', u'2017-10-02 11:47:07.088836', u'None', u'2017-10-02 11:47:52.207771', u'None', u'CMSSW_9_2_0', u'slc6_amd64_gcc530', u'/WprimeToWZToWlepZhad_narrow_M-2500_13TeV-madgraph/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM', u'[]', u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 10, 'runs': [], 'lumis': []}", u'-1', u'65534385e9fa5c91e285479a2c26cef3b84726b8a376a33667b6aa8c8f0be7d7.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'lewang', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang', u'cms', u'None', u'None', u'Wprime_2500_weight_v2-00000000000000000000000000000000', u'T2_CH_CERN', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'F', u'Analysis', u'{}', u'[]', u'T', u'vocms052', u'[]', u'1250', u'1', u'2000', u'10', u'None', u'http://vocms0144.cern.ch/mon/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2', u'None', u'None', u'[]', u'[]', u'[]', u'pythia', u'[]', u"['RStreeEDBR_pickup.root']", u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'None', u'0', u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'crab3@vocms0144.cern.ch', u'F', u'[]', u'T', u'/store/user/lewang/', u'F', u'None', u'F', u'F', u'F', u'None', u'WprimeToWZToWlepZhad_narrow_M-2500_13TeV-madgraph', u'filetransfers', u'SUBMIT', u'13351399', u'4c8350854817afd0512a81a0edc9ac8f9838183de71a86b1f7c935a2c3fb46a0.tar.gz', u'188.184.91.100', u'F', u'None'], u'desc': {u'columns': [u'tm_taskname', u'panda_jobset_id', u'tm_task_status', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_totalunits', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_job_type', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_user_webdir', u'tm_activity', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_task_warnings', u'tm_generator', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_asourl', u'tm_events_per_lumi', u'tm_use_parent', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_publish_groupname', u'tm_nonvalid_input_dataset', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_asodb', u'tm_task_command', u'clusterid', u'tm_debug_files', u'tm_submitter_ip_addr', u'tm_ignore_global_blacklist', u'tm_last_publication']}}
+INFO 2017-10-03 15:04:21,261: 	 CRAB project directory:		/afs/cern.ch/user/l/lewang/Xudong/Summer17/MC/CMSSW_9_2_0/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_Wprime_2500_weight_v2
+INFO 2017-10-03 15:04:21,261: 	 Task name:			171002_114707:lewang_crab_Wprime_2500_weight_v2
+INFO 2017-10-03 15:04:21,261: 	 Grid scheduler:			crab3@vocms0144.cern.ch
+INFO 2017-10-03 15:04:21,261: 	 Status on the CRAB server:	SUBMITTED
+INFO 2017-10-03 15:04:21,261: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/171002_114707%3Alewang_crab_Wprime_2500_weight_v2
+INFO 2017-10-03 15:04:21,261: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=lewang&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=171002_114707%3Alewang_crab_Wprime_2500_weight_v2
+DEBUG 2017-10-03 15:04:21,262: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 13351399)
+DEBUG 2017-10-03 15:04:21,262: 	 Webdir is located at http://vocms0144.cern.ch/mon/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2
+DEBUG 2017-10-03 15:04:21,589: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0144/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2
+DEBUG 2017-10-03 15:04:21,589: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0144/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2/status_cache
+DEBUG 2017-10-03 15:04:21,903: 	 Got information from status cache file: {'1': {'Retries': 0, 'WallDurations': [8.0, 2079.0], 'StartTimes': [1506945066.0], 'SubmitTimes': [1506944883.0], 'JobIds': ['13351402.0'], 'EndTimes': [1506947145.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [758668], 'TotalUserCpuTimeHistory': [1881], 'SiteHistory': ['Unknown', 'T2_US_Wisconsin'], 'TotalSysCpuTimeHistory': [40]}}
+INFO 2017-10-03 15:04:21,903: 	 Status on the scheduler:	COMPLETED
+INFO 2017-10-03 15:04:21,903: 	 
+Jobs status:                    finished      100.0% (1/1)
+INFO 2017-10-03 15:04:21,903: 	 
+No publication information (publication has been disabled in the CRAB configuration file)
+INFO 2017-10-03 15:04:21,919: 	 Log file is /afs/cern.ch/user/l/lewang/Xudong/Summer17/MC/CMSSW_9_2_0/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_Wprime_2500_weight_v2/crab.log
+DEBUG 2017-10-03 15:57:46,671: 	 Executing command: 'status'
+DEBUG 2017-10-03 15:57:46,671: 	 Found CRAB cache file /afs/cern.ch/user/l/lewang/.crab3
+DEBUG 2017-10-03 15:57:46,676: 	 Checking credentials
+DEBUG 2017-10-03 15:57:46,676: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-10-03 15:57:46,676: 	 Getting proxy life time left
+DEBUG 2017-10-03 15:57:47,180: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 86311
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-03 15:57:47,683: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 86311
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-03 15:57:47,684: 	 Proxy valid for 23:58:31 hours
+DEBUG 2017-10-03 15:57:47,990: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-03 15:57:47,990: 	 Checking credentials
+DEBUG 2017-10-03 15:57:47,990: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-10-03 15:57:47,991: 	 Getting proxy life time left
+DEBUG 2017-10-03 15:57:48,495: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 86310
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-03 15:57:49,000: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 86310
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-03 15:57:49,000: 	 Proxy valid for 23:58:30 hours
+DEBUG 2017-10-03 15:57:49,345: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+DEBUG 2017-10-03 15:57:49,452: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-03 15:57:49,452: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-10-03 15:57:49,452: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang_cmsweb.cern.ch for credential name
+DEBUG 2017-10-03 15:57:49,555: 	 Executing : 
+ command : myproxy-info -l 1b9ed1fd5af45f6b0603ad12c45a57a42d266ac3 -s myproxy.cern.ch
+ output : username: 1b9ed1fd5af45f6b0603ad12c45a57a42d266ac3
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  timeleft: 532:58:27  (22.2 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-03 15:57:49,556: 	 Myproxy is valid: 1918707
+DEBUG 2017-10-03 15:57:49,556: 	 Command use: status
+DEBUG 2017-10-03 15:57:49,556: 	 Options use: ['-d', 'crab_Wprime_2500_weight_v2/']
+DEBUG 2017-10-03 15:57:49,917: 	 CRABClient version: 3.3.1707.patch1
+DEBUG 2017-10-03 15:57:49,918: 	 Instance is prod
+DEBUG 2017-10-03 15:57:49,918: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-10-03 15:57:49,918: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-10-03 15:57:50,308: 	 Got information from server oracle database: {u'result': [u'171002_114707:lewang_crab_Wprime_2500_weight_v2', u'None', u'SUBMITTED', u'2017-10-02 11:47:07.088836', u'None', u'2017-10-02 11:47:52.207771', u'None', u'CMSSW_9_2_0', u'slc6_amd64_gcc530', u'/WprimeToWZToWlepZhad_narrow_M-2500_13TeV-madgraph/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM', u'[]', u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 10, 'runs': [], 'lumis': []}", u'-1', u'65534385e9fa5c91e285479a2c26cef3b84726b8a376a33667b6aa8c8f0be7d7.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'lewang', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang', u'cms', u'None', u'None', u'Wprime_2500_weight_v2-00000000000000000000000000000000', u'T2_CH_CERN', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'F', u'Analysis', u'{}', u'[]', u'T', u'vocms052', u'[]', u'1250', u'1', u'2000', u'10', u'None', u'http://vocms0144.cern.ch/mon/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2', u'None', u'None', u'[]', u'[]', u'[]', u'pythia', u'[]', u"['RStreeEDBR_pickup.root']", u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'None', u'0', u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'crab3@vocms0144.cern.ch', u'F', u'[]', u'T', u'/store/user/lewang/', u'F', u'None', u'F', u'F', u'F', u'None', u'WprimeToWZToWlepZhad_narrow_M-2500_13TeV-madgraph', u'filetransfers', u'SUBMIT', u'13351399', u'4c8350854817afd0512a81a0edc9ac8f9838183de71a86b1f7c935a2c3fb46a0.tar.gz', u'188.184.91.100', u'F', u'None'], u'desc': {u'columns': [u'tm_taskname', u'panda_jobset_id', u'tm_task_status', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_totalunits', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_job_type', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_user_webdir', u'tm_activity', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_task_warnings', u'tm_generator', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_asourl', u'tm_events_per_lumi', u'tm_use_parent', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_publish_groupname', u'tm_nonvalid_input_dataset', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_asodb', u'tm_task_command', u'clusterid', u'tm_debug_files', u'tm_submitter_ip_addr', u'tm_ignore_global_blacklist', u'tm_last_publication']}}
+INFO 2017-10-03 15:57:50,308: 	 CRAB project directory:		/afs/cern.ch/user/l/lewang/Xudong/Summer17/MC/CMSSW_9_2_0/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_Wprime_2500_weight_v2
+INFO 2017-10-03 15:57:50,309: 	 Task name:			171002_114707:lewang_crab_Wprime_2500_weight_v2
+INFO 2017-10-03 15:57:50,309: 	 Grid scheduler:			crab3@vocms0144.cern.ch
+INFO 2017-10-03 15:57:50,309: 	 Status on the CRAB server:	SUBMITTED
+INFO 2017-10-03 15:57:50,309: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/171002_114707%3Alewang_crab_Wprime_2500_weight_v2
+INFO 2017-10-03 15:57:50,309: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=lewang&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=171002_114707%3Alewang_crab_Wprime_2500_weight_v2
+DEBUG 2017-10-03 15:57:50,309: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 13351399)
+DEBUG 2017-10-03 15:57:50,309: 	 Webdir is located at http://vocms0144.cern.ch/mon/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2
+DEBUG 2017-10-03 15:57:50,654: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0144/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2
+DEBUG 2017-10-03 15:57:50,654: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0144/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2/status_cache
+DEBUG 2017-10-03 15:57:50,971: 	 Got information from status cache file: {'1': {'Retries': 0, 'WallDurations': [8.0, 2079.0], 'StartTimes': [1506945066.0], 'SubmitTimes': [1506944883.0], 'JobIds': ['13351402.0'], 'EndTimes': [1506947145.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [758668], 'TotalUserCpuTimeHistory': [1881], 'SiteHistory': ['Unknown', 'T2_US_Wisconsin'], 'TotalSysCpuTimeHistory': [40]}}
+INFO 2017-10-03 15:57:50,971: 	 Status on the scheduler:	COMPLETED
+INFO 2017-10-03 15:57:50,971: 	 
+Jobs status:                    finished      100.0% (1/1)
+INFO 2017-10-03 15:57:50,971: 	 
+No publication information (publication has been disabled in the CRAB configuration file)
+INFO 2017-10-03 15:57:50,984: 	 Log file is /afs/cern.ch/user/l/lewang/Xudong/Summer17/MC/CMSSW_9_2_0/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_Wprime_2500_weight_v2/crab.log
+DEBUG 2017-10-03 18:25:58,700: 	 Executing command: 'status'
+DEBUG 2017-10-03 18:25:58,700: 	 Found CRAB cache file /afs/cern.ch/user/l/lewang/.crab3
+DEBUG 2017-10-03 18:25:58,711: 	 Checking credentials
+DEBUG 2017-10-03 18:25:58,711: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-10-03 18:25:58,712: 	 Getting proxy life time left
+DEBUG 2017-10-03 18:25:59,530: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 86289
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-03 18:26:00,239: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 86287
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-03 18:26:00,239: 	 Proxy valid for 23:58:09 hours
+DEBUG 2017-10-03 18:26:00,517: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-03 18:26:00,518: 	 Checking credentials
+DEBUG 2017-10-03 18:26:00,518: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-10-03 18:26:00,518: 	 Getting proxy life time left
+DEBUG 2017-10-03 18:26:01,337: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 86287
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-03 18:26:02,145: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 86285
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-03 18:26:02,146: 	 Proxy valid for 23:58:07 hours
+DEBUG 2017-10-03 18:26:02,539: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+DEBUG 2017-10-03 18:26:02,654: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-03 18:26:02,654: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-10-03 18:26:02,654: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang_cmsweb.cern.ch for credential name
+DEBUG 2017-10-03 18:26:03,060: 	 Executing : 
+ command : myproxy-info -l 1b9ed1fd5af45f6b0603ad12c45a57a42d266ac3 -s myproxy.cern.ch
+ output : username: 1b9ed1fd5af45f6b0603ad12c45a57a42d266ac3
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  timeleft: 530:30:14  (22.1 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-03 18:26:03,062: 	 Myproxy is valid: 1909814
+DEBUG 2017-10-03 18:26:03,062: 	 Command use: status
+DEBUG 2017-10-03 18:26:03,062: 	 Options use: ['-d', 'crab_Wprime_2500_weight_v2/']
+DEBUG 2017-10-03 18:26:03,414: 	 CRABClient version: 3.3.1707.patch1
+DEBUG 2017-10-03 18:26:03,415: 	 Instance is prod
+DEBUG 2017-10-03 18:26:03,415: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-10-03 18:26:03,415: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-10-03 18:26:03,820: 	 Got information from server oracle database: {u'result': [u'171002_114707:lewang_crab_Wprime_2500_weight_v2', u'None', u'SUBMITTED', u'2017-10-02 11:47:07.088836', u'None', u'2017-10-02 11:47:52.207771', u'None', u'CMSSW_9_2_0', u'slc6_amd64_gcc530', u'/WprimeToWZToWlepZhad_narrow_M-2500_13TeV-madgraph/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM', u'[]', u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 10, 'runs': [], 'lumis': []}", u'-1', u'65534385e9fa5c91e285479a2c26cef3b84726b8a376a33667b6aa8c8f0be7d7.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'lewang', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang', u'cms', u'None', u'None', u'Wprime_2500_weight_v2-00000000000000000000000000000000', u'T2_CH_CERN', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'F', u'Analysis', u'{}', u'[]', u'T', u'vocms052', u'[]', u'1250', u'1', u'2000', u'10', u'None', u'http://vocms0144.cern.ch/mon/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2', u'None', u'None', u'[]', u'[]', u'[]', u'pythia', u'[]', u"['RStreeEDBR_pickup.root']", u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'None', u'0', u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'crab3@vocms0144.cern.ch', u'F', u'[]', u'T', u'/store/user/lewang/', u'F', u'None', u'F', u'F', u'F', u'None', u'WprimeToWZToWlepZhad_narrow_M-2500_13TeV-madgraph', u'filetransfers', u'SUBMIT', u'13351399', u'4c8350854817afd0512a81a0edc9ac8f9838183de71a86b1f7c935a2c3fb46a0.tar.gz', u'188.184.91.100', u'F', u'None'], u'desc': {u'columns': [u'tm_taskname', u'panda_jobset_id', u'tm_task_status', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_totalunits', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_job_type', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_user_webdir', u'tm_activity', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_task_warnings', u'tm_generator', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_asourl', u'tm_events_per_lumi', u'tm_use_parent', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_publish_groupname', u'tm_nonvalid_input_dataset', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_asodb', u'tm_task_command', u'clusterid', u'tm_debug_files', u'tm_submitter_ip_addr', u'tm_ignore_global_blacklist', u'tm_last_publication']}}
+INFO 2017-10-03 18:26:03,821: 	 CRAB project directory:		/afs/cern.ch/user/l/lewang/Xudong/Summer17/MC/CMSSW_9_2_0/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_Wprime_2500_weight_v2
+INFO 2017-10-03 18:26:03,821: 	 Task name:			171002_114707:lewang_crab_Wprime_2500_weight_v2
+INFO 2017-10-03 18:26:03,821: 	 Grid scheduler:			crab3@vocms0144.cern.ch
+INFO 2017-10-03 18:26:03,821: 	 Status on the CRAB server:	SUBMITTED
+INFO 2017-10-03 18:26:03,821: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/171002_114707%3Alewang_crab_Wprime_2500_weight_v2
+INFO 2017-10-03 18:26:03,822: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=lewang&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=171002_114707%3Alewang_crab_Wprime_2500_weight_v2
+DEBUG 2017-10-03 18:26:03,822: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 13351399)
+DEBUG 2017-10-03 18:26:03,822: 	 Webdir is located at http://vocms0144.cern.ch/mon/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2
+DEBUG 2017-10-03 18:26:04,202: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0144/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2
+DEBUG 2017-10-03 18:26:04,202: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0144/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2/status_cache
+DEBUG 2017-10-03 18:26:04,595: 	 Got information from status cache file: {'1': {'Retries': 0, 'WallDurations': [8.0, 2079.0], 'StartTimes': [1506945066.0], 'SubmitTimes': [1506944883.0], 'JobIds': ['13351402.0'], 'EndTimes': [1506947145.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [758668], 'TotalUserCpuTimeHistory': [1881], 'SiteHistory': ['Unknown', 'T2_US_Wisconsin'], 'TotalSysCpuTimeHistory': [40]}}
+INFO 2017-10-03 18:26:04,595: 	 Status on the scheduler:	COMPLETED
+INFO 2017-10-03 18:26:04,595: 	 
+Jobs status:                    finished      100.0% (1/1)
+INFO 2017-10-03 18:26:04,596: 	 
+No publication information (publication has been disabled in the CRAB configuration file)
+INFO 2017-10-03 18:26:04,610: 	 Log file is /afs/cern.ch/user/l/lewang/Xudong/Summer17/MC/CMSSW_9_2_0/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_Wprime_2500_weight_v2/crab.log
+DEBUG 2017-10-04 13:06:53,510: 	 Executing command: 'status'
+DEBUG 2017-10-04 13:06:53,510: 	 Found CRAB cache file /afs/cern.ch/user/l/lewang/.crab3
+DEBUG 2017-10-04 13:06:53,521: 	 Checking credentials
+DEBUG 2017-10-04 13:06:53,522: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-10-04 13:06:53,522: 	 Getting proxy life time left
+DEBUG 2017-10-04 13:06:54,335: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 86269
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-04 13:06:55,248: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 86268
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-04 13:06:55,248: 	 Proxy valid for 23:57:49 hours
+DEBUG 2017-10-04 13:06:55,926: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-04 13:06:55,926: 	 Checking credentials
+DEBUG 2017-10-04 13:06:55,927: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-10-04 13:06:55,927: 	 Getting proxy life time left
+DEBUG 2017-10-04 13:06:56,842: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 86267
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-04 13:06:57,548: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 86266
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-04 13:06:57,548: 	 Proxy valid for 23:57:47 hours
+DEBUG 2017-10-04 13:06:57,942: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+DEBUG 2017-10-04 13:06:58,053: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-04 13:06:58,053: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-10-04 13:06:58,053: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang_cmsweb.cern.ch for credential name
+DEBUG 2017-10-04 13:06:58,257: 	 Executing : 
+ command : myproxy-info -l 1b9ed1fd5af45f6b0603ad12c45a57a42d266ac3 -s myproxy.cern.ch
+ output : username: 1b9ed1fd5af45f6b0603ad12c45a57a42d266ac3
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  timeleft: 511:49:18  (21.3 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-04 13:06:58,258: 	 Myproxy is valid: 1842558
+DEBUG 2017-10-04 13:06:58,258: 	 Command use: status
+DEBUG 2017-10-04 13:06:58,258: 	 Options use: ['-d', 'crab_Wprime_2500_weight_v2/']
+DEBUG 2017-10-04 13:06:58,593: 	 CRABClient version: 3.3.1707.patch1
+DEBUG 2017-10-04 13:06:58,593: 	 Instance is prod
+DEBUG 2017-10-04 13:06:58,593: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-10-04 13:06:58,593: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-10-04 13:06:58,989: 	 Got information from server oracle database: {u'result': [u'171002_114707:lewang_crab_Wprime_2500_weight_v2', u'None', u'SUBMITTED', u'2017-10-02 11:47:07.088836', u'None', u'2017-10-02 11:47:52.207771', u'None', u'CMSSW_9_2_0', u'slc6_amd64_gcc530', u'/WprimeToWZToWlepZhad_narrow_M-2500_13TeV-madgraph/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM', u'[]', u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 10, 'runs': [], 'lumis': []}", u'-1', u'65534385e9fa5c91e285479a2c26cef3b84726b8a376a33667b6aa8c8f0be7d7.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'lewang', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang', u'cms', u'None', u'None', u'Wprime_2500_weight_v2-00000000000000000000000000000000', u'T2_CH_CERN', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'F', u'Analysis', u'{}', u'[]', u'T', u'vocms052', u'[]', u'1250', u'1', u'2000', u'10', u'None', u'http://vocms0144.cern.ch/mon/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2', u'None', u'None', u'[]', u'[]', u'[]', u'pythia', u'[]', u"['RStreeEDBR_pickup.root']", u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'None', u'0', u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'crab3@vocms0144.cern.ch', u'F', u'[]', u'T', u'/store/user/lewang/', u'F', u'None', u'F', u'F', u'F', u'None', u'WprimeToWZToWlepZhad_narrow_M-2500_13TeV-madgraph', u'filetransfers', u'SUBMIT', u'13351399', u'4c8350854817afd0512a81a0edc9ac8f9838183de71a86b1f7c935a2c3fb46a0.tar.gz', u'188.184.91.100', u'F', u'None'], u'desc': {u'columns': [u'tm_taskname', u'panda_jobset_id', u'tm_task_status', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_totalunits', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_job_type', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_user_webdir', u'tm_activity', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_task_warnings', u'tm_generator', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_asourl', u'tm_events_per_lumi', u'tm_use_parent', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_publish_groupname', u'tm_nonvalid_input_dataset', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_asodb', u'tm_task_command', u'clusterid', u'tm_debug_files', u'tm_submitter_ip_addr', u'tm_ignore_global_blacklist', u'tm_last_publication']}}
+INFO 2017-10-04 13:06:58,989: 	 CRAB project directory:		/afs/cern.ch/user/l/lewang/Xudong/Summer17/MC/CMSSW_9_2_0/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_Wprime_2500_weight_v2
+INFO 2017-10-04 13:06:58,989: 	 Task name:			171002_114707:lewang_crab_Wprime_2500_weight_v2
+INFO 2017-10-04 13:06:58,990: 	 Grid scheduler:			crab3@vocms0144.cern.ch
+INFO 2017-10-04 13:06:58,990: 	 Status on the CRAB server:	SUBMITTED
+INFO 2017-10-04 13:06:58,990: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/171002_114707%3Alewang_crab_Wprime_2500_weight_v2
+INFO 2017-10-04 13:06:58,990: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=lewang&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=171002_114707%3Alewang_crab_Wprime_2500_weight_v2
+DEBUG 2017-10-04 13:06:58,990: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 13351399)
+DEBUG 2017-10-04 13:06:58,990: 	 Webdir is located at http://vocms0144.cern.ch/mon/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2
+DEBUG 2017-10-04 13:06:59,416: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0144/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2
+DEBUG 2017-10-04 13:06:59,416: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0144/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2/status_cache
+DEBUG 2017-10-04 13:06:59,771: 	 Got information from status cache file: {'1': {'Retries': 0, 'WallDurations': [8.0, 2079.0], 'StartTimes': [1506945066.0], 'SubmitTimes': [1506944883.0], 'JobIds': ['13351402.0'], 'EndTimes': [1506947145.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [758668], 'TotalUserCpuTimeHistory': [1881], 'SiteHistory': ['Unknown', 'T2_US_Wisconsin'], 'TotalSysCpuTimeHistory': [40]}}
+INFO 2017-10-04 13:06:59,771: 	 Status on the scheduler:	COMPLETED
+INFO 2017-10-04 13:06:59,772: 	 
+Jobs status:                    finished      100.0% (1/1)
+INFO 2017-10-04 13:06:59,772: 	 
+No publication information (publication has been disabled in the CRAB configuration file)
+INFO 2017-10-04 13:06:59,921: 	 Log file is /afs/cern.ch/user/l/lewang/Xudong/Summer17/MC/CMSSW_9_2_0/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_Wprime_2500_weight_v2/crab.log
+DEBUG 2017-10-06 16:04:26,922: 	 Executing command: 'status'
+DEBUG 2017-10-06 16:04:26,922: 	 Found CRAB cache file /afs/cern.ch/user/l/lewang/.crab3
+DEBUG 2017-10-06 16:04:26,929: 	 Checking credentials
+DEBUG 2017-10-06 16:04:26,929: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-10-06 16:04:26,929: 	 Getting proxy life time left
+DEBUG 2017-10-06 16:04:27,647: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 85190
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-06 16:04:28,467: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 85189
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-06 16:04:28,467: 	 Proxy valid for 23:39:50 hours
+DEBUG 2017-10-06 16:04:28,693: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-06 16:04:28,693: 	 Checking credentials
+DEBUG 2017-10-06 16:04:28,693: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-10-06 16:04:28,693: 	 Getting proxy life time left
+DEBUG 2017-10-06 16:04:29,499: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 85188
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-06 16:04:30,307: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 85187
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-06 16:04:30,308: 	 Proxy valid for 23:39:48 hours
+DEBUG 2017-10-06 16:04:30,693: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+DEBUG 2017-10-06 16:04:30,817: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-06 16:04:30,817: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-10-06 16:04:30,817: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang_cmsweb.cern.ch for credential name
+DEBUG 2017-10-06 16:04:31,040: 	 Executing : 
+ command : myproxy-info -l 1b9ed1fd5af45f6b0603ad12c45a57a42d266ac3 -s myproxy.cern.ch
+ output : username: 1b9ed1fd5af45f6b0603ad12c45a57a42d266ac3
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  timeleft: 460:51:46  (19.2 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-06 16:04:31,041: 	 Myproxy is valid: 1659106
+DEBUG 2017-10-06 16:04:31,041: 	 Command use: status
+DEBUG 2017-10-06 16:04:31,042: 	 Options use: ['-d', 'crab_Wprime_2500_weight_v2/']
+DEBUG 2017-10-06 16:04:31,434: 	 CRABClient version: 3.3.1707.patch1
+DEBUG 2017-10-06 16:04:31,434: 	 Instance is prod
+DEBUG 2017-10-06 16:04:31,434: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-10-06 16:04:31,434: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-10-06 16:04:31,869: 	 Got information from server oracle database: {u'result': [u'171002_114707:lewang_crab_Wprime_2500_weight_v2', u'None', u'SUBMITTED', u'2017-10-02 11:47:07.088836', u'None', u'2017-10-02 11:47:52.207771', u'None', u'CMSSW_9_2_0', u'slc6_amd64_gcc530', u'/WprimeToWZToWlepZhad_narrow_M-2500_13TeV-madgraph/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM', u'[]', u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 10, 'runs': [], 'lumis': []}", u'-1', u'65534385e9fa5c91e285479a2c26cef3b84726b8a376a33667b6aa8c8f0be7d7.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'lewang', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang', u'cms', u'None', u'None', u'Wprime_2500_weight_v2-00000000000000000000000000000000', u'T2_CH_CERN', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'F', u'Analysis', u'{}', u'[]', u'T', u'vocms052', u'[]', u'1250', u'1', u'2000', u'10', u'None', u'http://vocms0144.cern.ch/mon/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2', u'None', u'None', u'[]', u'[]', u'[]', u'pythia', u'[]', u"['RStreeEDBR_pickup.root']", u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'None', u'0', u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'crab3@vocms0144.cern.ch', u'F', u'[]', u'T', u'/store/user/lewang/', u'F', u'None', u'F', u'F', u'F', u'None', u'WprimeToWZToWlepZhad_narrow_M-2500_13TeV-madgraph', u'filetransfers', u'SUBMIT', u'13351399', u'4c8350854817afd0512a81a0edc9ac8f9838183de71a86b1f7c935a2c3fb46a0.tar.gz', u'188.184.91.100', u'F', u'None'], u'desc': {u'columns': [u'tm_taskname', u'panda_jobset_id', u'tm_task_status', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_totalunits', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_job_type', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_user_webdir', u'tm_activity', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_task_warnings', u'tm_generator', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_asourl', u'tm_events_per_lumi', u'tm_use_parent', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_publish_groupname', u'tm_nonvalid_input_dataset', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_asodb', u'tm_task_command', u'clusterid', u'tm_debug_files', u'tm_submitter_ip_addr', u'tm_ignore_global_blacklist', u'tm_last_publication']}}
+INFO 2017-10-06 16:04:31,870: 	 CRAB project directory:		/afs/cern.ch/user/l/lewang/Xudong/Summer17/MC/CMSSW_9_2_0/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_Wprime_2500_weight_v2
+INFO 2017-10-06 16:04:31,870: 	 Task name:			171002_114707:lewang_crab_Wprime_2500_weight_v2
+INFO 2017-10-06 16:04:31,870: 	 Grid scheduler:			crab3@vocms0144.cern.ch
+INFO 2017-10-06 16:04:31,870: 	 Status on the CRAB server:	SUBMITTED
+INFO 2017-10-06 16:04:31,870: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/171002_114707%3Alewang_crab_Wprime_2500_weight_v2
+INFO 2017-10-06 16:04:31,871: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=lewang&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=171002_114707%3Alewang_crab_Wprime_2500_weight_v2
+DEBUG 2017-10-06 16:04:31,871: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 13351399)
+DEBUG 2017-10-06 16:04:31,871: 	 Webdir is located at http://vocms0144.cern.ch/mon/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2
+DEBUG 2017-10-06 16:04:32,275: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0144/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2
+DEBUG 2017-10-06 16:04:32,275: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0144/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2/status_cache
+DEBUG 2017-10-06 16:04:32,612: 	 Got information from status cache file: {'1': {'Retries': 0, 'WallDurations': [8.0, 2079.0], 'StartTimes': [1506945066.0], 'SubmitTimes': [1506944883.0], 'JobIds': ['13351402.0'], 'EndTimes': [1506947145.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [758668], 'TotalUserCpuTimeHistory': [1881], 'SiteHistory': ['Unknown', 'T2_US_Wisconsin'], 'TotalSysCpuTimeHistory': [40]}}
+INFO 2017-10-06 16:04:32,612: 	 Status on the scheduler:	COMPLETED
+INFO 2017-10-06 16:04:32,612: 	 
+Jobs status:                    finished      100.0% (1/1)
+INFO 2017-10-06 16:04:32,612: 	 
+No publication information (publication has been disabled in the CRAB configuration file)
+INFO 2017-10-06 16:04:32,738: 	 Log file is /afs/cern.ch/user/l/lewang/Xudong/Summer17/MC/CMSSW_9_2_0/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_Wprime_2500_weight_v2/crab.log
+DEBUG 2017-10-06 20:32:24,300: 	 Executing command: 'resubmit'
+DEBUG 2017-10-06 20:32:24,300: 	 Found CRAB cache file /afs/cern.ch/user/l/lewang/.crab3
+DEBUG 2017-10-06 20:32:24,307: 	 Checking credentials
+DEBUG 2017-10-06 20:32:24,307: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-10-06 20:32:24,307: 	 Getting proxy life time left
+DEBUG 2017-10-06 20:32:25,017: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 85513
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-06 20:32:25,722: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 85513
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-06 20:32:25,723: 	 Proxy valid for 23:45:13 hours
+DEBUG 2017-10-06 20:32:25,947: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-06 20:32:25,948: 	 Checking credentials
+DEBUG 2017-10-06 20:32:25,948: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-10-06 20:32:25,948: 	 Getting proxy life time left
+DEBUG 2017-10-06 20:32:26,757: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 85512
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-06 20:32:27,463: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 85511
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-06 20:32:27,463: 	 Proxy valid for 23:45:12 hours
+DEBUG 2017-10-06 20:32:27,843: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+DEBUG 2017-10-06 20:32:27,953: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-06 20:32:27,954: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-10-06 20:32:27,954: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang_cmsweb.cern.ch for credential name
+DEBUG 2017-10-06 20:32:28,364: 	 Executing : 
+ command : myproxy-info -l 1b9ed1fd5af45f6b0603ad12c45a57a42d266ac3 -s myproxy.cern.ch
+ output : username: 1b9ed1fd5af45f6b0603ad12c45a57a42d266ac3
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  timeleft: 456:23:48  (19.0 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-06 20:32:28,366: 	 Myproxy is valid: 1643028
+DEBUG 2017-10-06 20:32:28,366: 	 Command use: resubmit
+DEBUG 2017-10-06 20:32:28,366: 	 Options use: ['-d', 'crab_Wprime_2500_weight_v2/']
+DEBUG 2017-10-06 20:32:28,866: 	 CRABClient version: 3.3.1707.patch1
+DEBUG 2017-10-06 20:32:28,866: 	 Instance is prod
+DEBUG 2017-10-06 20:32:28,866: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-10-06 20:32:28,866: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-10-06 20:32:28,866: 	 Executing command: 'status'
+DEBUG 2017-10-06 20:32:28,866: 	 Found CRAB cache file /afs/cern.ch/user/l/lewang/.crab3
+DEBUG 2017-10-06 20:32:28,887: 	 Checking credentials
+DEBUG 2017-10-06 20:32:28,887: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-10-06 20:32:28,887: 	 Getting proxy life time left
+DEBUG 2017-10-06 20:32:29,706: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 85509
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-06 20:32:30,542: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 85508
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-06 20:32:30,543: 	 Proxy valid for 23:45:09 hours
+DEBUG 2017-10-06 20:32:30,781: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-06 20:32:30,781: 	 Checking credentials
+DEBUG 2017-10-06 20:32:30,781: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-10-06 20:32:30,781: 	 Getting proxy life time left
+DEBUG 2017-10-06 20:32:31,636: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 85507
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-06 20:32:32,471: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 85506
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-06 20:32:32,472: 	 Proxy valid for 23:45:07 hours
+DEBUG 2017-10-06 20:32:32,949: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+DEBUG 2017-10-06 20:32:33,065: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-06 20:32:33,065: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-10-06 20:32:33,066: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang_cmsweb.cern.ch for credential name
+DEBUG 2017-10-06 20:32:33,271: 	 Executing : 
+ command : myproxy-info -l 1b9ed1fd5af45f6b0603ad12c45a57a42d266ac3 -s myproxy.cern.ch
+ output : username: 1b9ed1fd5af45f6b0603ad12c45a57a42d266ac3
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  timeleft: 456:23:43  (19.0 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-06 20:32:33,271: 	 Myproxy is valid: 1643023
+DEBUG 2017-10-06 20:32:33,271: 	 Command use: status
+DEBUG 2017-10-06 20:32:33,271: 	 Options use: []
+DEBUG 2017-10-06 20:32:33,732: 	 CRABClient version: 3.3.1707.patch1
+DEBUG 2017-10-06 20:32:33,732: 	 Instance is prod
+DEBUG 2017-10-06 20:32:33,732: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-10-06 20:32:33,732: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-10-06 20:32:34,221: 	 Got information from server oracle database: {u'result': [u'171002_114707:lewang_crab_Wprime_2500_weight_v2', u'None', u'SUBMITTED', u'2017-10-02 11:47:07.088836', u'None', u'2017-10-02 11:47:52.207771', u'None', u'CMSSW_9_2_0', u'slc6_amd64_gcc530', u'/WprimeToWZToWlepZhad_narrow_M-2500_13TeV-madgraph/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM', u'[]', u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 10, 'runs': [], 'lumis': []}", u'-1', u'65534385e9fa5c91e285479a2c26cef3b84726b8a376a33667b6aa8c8f0be7d7.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'lewang', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang', u'cms', u'None', u'None', u'Wprime_2500_weight_v2-00000000000000000000000000000000', u'T2_CH_CERN', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'F', u'Analysis', u'{}', u'[]', u'T', u'vocms052', u'[]', u'1250', u'1', u'2000', u'10', u'None', u'http://vocms0144.cern.ch/mon/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2', u'None', u'None', u'[]', u'[]', u'[]', u'pythia', u'[]', u"['RStreeEDBR_pickup.root']", u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'None', u'0', u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'crab3@vocms0144.cern.ch', u'F', u'[]', u'T', u'/store/user/lewang/', u'F', u'None', u'F', u'F', u'F', u'None', u'WprimeToWZToWlepZhad_narrow_M-2500_13TeV-madgraph', u'filetransfers', u'SUBMIT', u'13351399', u'4c8350854817afd0512a81a0edc9ac8f9838183de71a86b1f7c935a2c3fb46a0.tar.gz', u'188.184.91.100', u'F', u'None'], u'desc': {u'columns': [u'tm_taskname', u'panda_jobset_id', u'tm_task_status', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_totalunits', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_job_type', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_user_webdir', u'tm_activity', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_task_warnings', u'tm_generator', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_asourl', u'tm_events_per_lumi', u'tm_use_parent', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_publish_groupname', u'tm_nonvalid_input_dataset', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_asodb', u'tm_task_command', u'clusterid', u'tm_debug_files', u'tm_submitter_ip_addr', u'tm_ignore_global_blacklist', u'tm_last_publication']}}
+INFO 2017-10-06 20:32:34,222: 	 CRAB project directory:		/afs/cern.ch/user/l/lewang/Xudong/Summer17/MC/CMSSW_9_2_0/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_Wprime_2500_weight_v2
+INFO 2017-10-06 20:32:34,222: 	 Task name:			171002_114707:lewang_crab_Wprime_2500_weight_v2
+INFO 2017-10-06 20:32:34,222: 	 Grid scheduler:			crab3@vocms0144.cern.ch
+INFO 2017-10-06 20:32:34,222: 	 Status on the CRAB server:	SUBMITTED
+INFO 2017-10-06 20:32:34,223: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/171002_114707%3Alewang_crab_Wprime_2500_weight_v2
+INFO 2017-10-06 20:32:34,223: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=lewang&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=171002_114707%3Alewang_crab_Wprime_2500_weight_v2
+DEBUG 2017-10-06 20:32:34,223: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 13351399)
+DEBUG 2017-10-06 20:32:34,223: 	 Webdir is located at http://vocms0144.cern.ch/mon/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2
+DEBUG 2017-10-06 20:32:35,238: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0144/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2
+DEBUG 2017-10-06 20:32:35,238: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0144/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2/status_cache
+DEBUG 2017-10-06 20:32:35,667: 	 Got information from status cache file: {'1': {'Retries': 0, 'WallDurations': [8.0, 2079.0], 'StartTimes': [1506945066.0], 'SubmitTimes': [1506944883.0], 'JobIds': ['13351402.0'], 'EndTimes': [1506947145.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [758668], 'TotalUserCpuTimeHistory': [1881], 'SiteHistory': ['Unknown', 'T2_US_Wisconsin'], 'TotalSysCpuTimeHistory': [40]}}
+INFO 2017-10-06 20:32:35,667: 	 Status on the scheduler:	COMPLETED
+INFO 2017-10-06 20:32:35,667: 	 
+Jobs status:                    finished      100.0% (1/1)
+INFO 2017-10-06 20:32:35,667: 	 
+No publication information (publication has been disabled in the CRAB configuration file)
+DEBUG 2017-10-06 20:32:35,724: 	 Requesting resubmission of failed jobs in task 171002_114707:lewang_crab_Wprime_2500_weight_v2
+ERROR 2017-10-06 20:32:35,724: 	 Found no jobs to resubmit. Only jobs in status failed can be resubmitted. Jobs in status finished can also be resubmitted, but only if the jobids are specified and the force option is set.
+ERROR 2017-10-06 20:32:35,724: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/bin/crab", line 148, in __call__
+    self.cmd()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/lib/python2.7/site-packages/CRABClient/Commands/resubmit.py", line 60, in __call__
+    self.jobids = self.processJobIds(jobList)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/lib/python2.7/site-packages/CRABClient/Commands/resubmit.py", line 161, in processJobIds
+    raise ConfigurationException(msg)
+ConfigurationException: Found no jobs to resubmit. Only jobs in status failed can be resubmitted. Jobs in status finished can also be resubmitted, but only if the jobids are specified and the force option is set.
+DEBUG 2017-10-07 15:28:37,645: 	 Executing command: 'resubmit'
+DEBUG 2017-10-07 15:28:37,645: 	 Found CRAB cache file /afs/cern.ch/user/l/lewang/.crab3
+DEBUG 2017-10-07 15:28:37,659: 	 Checking credentials
+DEBUG 2017-10-07 15:28:37,660: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-10-07 15:28:37,660: 	 Getting proxy life time left
+DEBUG 2017-10-07 15:28:39,106: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 85905
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-07 15:28:40,143: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 85903
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-07 15:28:40,144: 	 Proxy valid for 23:51:45 hours
+DEBUG 2017-10-07 15:28:40,335: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-07 15:28:40,336: 	 Checking credentials
+DEBUG 2017-10-07 15:28:40,336: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-10-07 15:28:40,337: 	 Getting proxy life time left
+DEBUG 2017-10-07 15:28:41,371: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 85903
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-07 15:28:42,605: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 85901
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-07 15:28:42,605: 	 Proxy valid for 23:51:43 hours
+DEBUG 2017-10-07 15:28:42,995: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+DEBUG 2017-10-07 15:28:43,111: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-07 15:28:43,112: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-10-07 15:28:43,112: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang_cmsweb.cern.ch for credential name
+DEBUG 2017-10-07 15:28:43,425: 	 Executing : 
+ command : myproxy-info -l 1b9ed1fd5af45f6b0603ad12c45a57a42d266ac3 -s myproxy.cern.ch
+ output : username: 1b9ed1fd5af45f6b0603ad12c45a57a42d266ac3
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  timeleft: 437:27:33  (18.2 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-07 15:28:43,426: 	 Myproxy is valid: 1574853
+DEBUG 2017-10-07 15:28:43,426: 	 Command use: resubmit
+DEBUG 2017-10-07 15:28:43,426: 	 Options use: ['-d', 'crab_Wprime_2500_weight_v2/']
+DEBUG 2017-10-07 15:28:44,006: 	 CRABClient version: 3.3.1707.patch1
+DEBUG 2017-10-07 15:28:44,006: 	 Instance is prod
+DEBUG 2017-10-07 15:28:44,006: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-10-07 15:28:44,006: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-10-07 15:28:44,006: 	 Executing command: 'status'
+DEBUG 2017-10-07 15:28:44,007: 	 Found CRAB cache file /afs/cern.ch/user/l/lewang/.crab3
+DEBUG 2017-10-07 15:28:44,017: 	 Checking credentials
+DEBUG 2017-10-07 15:28:44,018: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-10-07 15:28:44,018: 	 Getting proxy life time left
+DEBUG 2017-10-07 15:28:44,961: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 85900
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-07 15:28:46,095: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 85898
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-07 15:28:46,095: 	 Proxy valid for 23:51:40 hours
+DEBUG 2017-10-07 15:28:46,285: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-07 15:28:46,285: 	 Checking credentials
+DEBUG 2017-10-07 15:28:46,285: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-10-07 15:28:46,285: 	 Getting proxy life time left
+DEBUG 2017-10-07 15:28:47,829: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 85897
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-07 15:28:49,064: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 85894
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-07 15:28:49,064: 	 Proxy valid for 23:51:37 hours
+DEBUG 2017-10-07 15:28:49,422: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+DEBUG 2017-10-07 15:28:49,649: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-07 15:28:49,649: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-10-07 15:28:49,649: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang_cmsweb.cern.ch for credential name
+DEBUG 2017-10-07 15:28:50,066: 	 Executing : 
+ command : myproxy-info -l 1b9ed1fd5af45f6b0603ad12c45a57a42d266ac3 -s myproxy.cern.ch
+ output : username: 1b9ed1fd5af45f6b0603ad12c45a57a42d266ac3
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  timeleft: 437:27:26  (18.2 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-07 15:28:50,066: 	 Myproxy is valid: 1574846
+DEBUG 2017-10-07 15:28:50,066: 	 Command use: status
+DEBUG 2017-10-07 15:28:50,066: 	 Options use: []
+DEBUG 2017-10-07 15:28:50,411: 	 CRABClient version: 3.3.1707.patch1
+DEBUG 2017-10-07 15:28:50,411: 	 Instance is prod
+DEBUG 2017-10-07 15:28:50,411: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-10-07 15:28:50,411: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-10-07 15:28:50,842: 	 Got information from server oracle database: {u'result': [u'171002_114707:lewang_crab_Wprime_2500_weight_v2', u'None', u'SUBMITTED', u'2017-10-02 11:47:07.088836', u'None', u'2017-10-02 11:47:52.207771', u'None', u'CMSSW_9_2_0', u'slc6_amd64_gcc530', u'/WprimeToWZToWlepZhad_narrow_M-2500_13TeV-madgraph/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM', u'[]', u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 10, 'runs': [], 'lumis': []}", u'-1', u'65534385e9fa5c91e285479a2c26cef3b84726b8a376a33667b6aa8c8f0be7d7.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'lewang', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang', u'cms', u'None', u'None', u'Wprime_2500_weight_v2-00000000000000000000000000000000', u'T2_CH_CERN', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'F', u'Analysis', u'{}', u'[]', u'T', u'vocms052', u'[]', u'1250', u'1', u'2000', u'10', u'None', u'http://vocms0144.cern.ch/mon/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2', u'None', u'None', u'[]', u'[]', u'[]', u'pythia', u'[]', u"['RStreeEDBR_pickup.root']", u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'None', u'0', u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'crab3@vocms0144.cern.ch', u'F', u'[]', u'T', u'/store/user/lewang/', u'F', u'None', u'F', u'F', u'F', u'None', u'WprimeToWZToWlepZhad_narrow_M-2500_13TeV-madgraph', u'filetransfers', u'SUBMIT', u'13351399', u'4c8350854817afd0512a81a0edc9ac8f9838183de71a86b1f7c935a2c3fb46a0.tar.gz', u'188.184.91.100', u'F', u'None'], u'desc': {u'columns': [u'tm_taskname', u'panda_jobset_id', u'tm_task_status', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_totalunits', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_job_type', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_user_webdir', u'tm_activity', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_task_warnings', u'tm_generator', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_asourl', u'tm_events_per_lumi', u'tm_use_parent', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_publish_groupname', u'tm_nonvalid_input_dataset', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_asodb', u'tm_task_command', u'clusterid', u'tm_debug_files', u'tm_submitter_ip_addr', u'tm_ignore_global_blacklist', u'tm_last_publication']}}
+INFO 2017-10-07 15:28:50,842: 	 CRAB project directory:		/afs/cern.ch/user/l/lewang/Xudong/Summer17/MC/CMSSW_9_2_0/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_Wprime_2500_weight_v2
+INFO 2017-10-07 15:28:50,842: 	 Task name:			171002_114707:lewang_crab_Wprime_2500_weight_v2
+INFO 2017-10-07 15:28:50,842: 	 Grid scheduler:			crab3@vocms0144.cern.ch
+INFO 2017-10-07 15:28:50,842: 	 Status on the CRAB server:	SUBMITTED
+INFO 2017-10-07 15:28:50,842: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/171002_114707%3Alewang_crab_Wprime_2500_weight_v2
+INFO 2017-10-07 15:28:50,842: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=lewang&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=171002_114707%3Alewang_crab_Wprime_2500_weight_v2
+DEBUG 2017-10-07 15:28:50,842: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 13351399)
+DEBUG 2017-10-07 15:28:50,842: 	 Webdir is located at http://vocms0144.cern.ch/mon/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2
+DEBUG 2017-10-07 15:28:51,219: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0144/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2
+DEBUG 2017-10-07 15:28:51,219: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0144/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2/status_cache
+DEBUG 2017-10-07 15:28:51,629: 	 Got information from status cache file: {'1': {'Retries': 0, 'WallDurations': [8.0, 2079.0], 'StartTimes': [1506945066.0], 'SubmitTimes': [1506944883.0], 'JobIds': ['13351402.0'], 'EndTimes': [1506947145.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [758668], 'TotalUserCpuTimeHistory': [1881], 'SiteHistory': ['Unknown', 'T2_US_Wisconsin'], 'TotalSysCpuTimeHistory': [40]}}
+INFO 2017-10-07 15:28:51,629: 	 Status on the scheduler:	COMPLETED
+INFO 2017-10-07 15:28:51,630: 	 
+Jobs status:                    finished      100.0% (1/1)
+INFO 2017-10-07 15:28:51,630: 	 
+No publication information (publication has been disabled in the CRAB configuration file)
+DEBUG 2017-10-07 15:28:51,702: 	 Requesting resubmission of failed jobs in task 171002_114707:lewang_crab_Wprime_2500_weight_v2
+ERROR 2017-10-07 15:28:51,702: 	 Found no jobs to resubmit. Only jobs in status failed can be resubmitted. Jobs in status finished can also be resubmitted, but only if the jobids are specified and the force option is set.
+ERROR 2017-10-07 15:28:51,703: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/bin/crab", line 148, in __call__
+    self.cmd()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/lib/python2.7/site-packages/CRABClient/Commands/resubmit.py", line 60, in __call__
+    self.jobids = self.processJobIds(jobList)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/lib/python2.7/site-packages/CRABClient/Commands/resubmit.py", line 161, in processJobIds
+    raise ConfigurationException(msg)
+ConfigurationException: Found no jobs to resubmit. Only jobs in status failed can be resubmitted. Jobs in status finished can also be resubmitted, but only if the jobids are specified and the force option is set.
+DEBUG 2017-10-08 12:59:12,873: 	 Executing command: 'resubmit'
+DEBUG 2017-10-08 12:59:12,874: 	 Found CRAB cache file /afs/cern.ch/user/l/lewang/.crab3
+DEBUG 2017-10-08 12:59:12,888: 	 Checking credentials
+DEBUG 2017-10-08 12:59:12,888: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-10-08 12:59:12,888: 	 Getting proxy life time left
+DEBUG 2017-10-08 12:59:14,523: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 85727
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-08 12:59:15,750: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 85726
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-08 12:59:15,751: 	 Proxy valid for 23:48:47 hours
+DEBUG 2017-10-08 12:59:29,037: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-08 12:59:29,037: 	 Checking credentials
+DEBUG 2017-10-08 12:59:29,038: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-10-08 12:59:29,038: 	 Getting proxy life time left
+DEBUG 2017-10-08 12:59:30,182: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 85711
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-08 12:59:31,008: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 85711
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-08 12:59:31,009: 	 Proxy valid for 23:48:31 hours
+DEBUG 2017-10-08 12:59:31,372: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+DEBUG 2017-10-08 12:59:31,490: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-08 12:59:31,491: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-10-08 12:59:31,491: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang_cmsweb.cern.ch for credential name
+DEBUG 2017-10-08 12:59:31,800: 	 Executing : 
+ command : myproxy-info -l 1b9ed1fd5af45f6b0603ad12c45a57a42d266ac3 -s myproxy.cern.ch
+ output : username: 1b9ed1fd5af45f6b0603ad12c45a57a42d266ac3
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  timeleft: 415:56:45  (17.3 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-08 12:59:31,802: 	 Myproxy is valid: 1497405
+DEBUG 2017-10-08 12:59:31,802: 	 Command use: resubmit
+DEBUG 2017-10-08 12:59:31,802: 	 Options use: ['-d', 'crab_Wprime_2500_weight_v2/']
+DEBUG 2017-10-08 12:59:32,363: 	 CRABClient version: 3.3.1707.patch1
+DEBUG 2017-10-08 12:59:32,363: 	 Instance is prod
+DEBUG 2017-10-08 12:59:32,363: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-10-08 12:59:32,364: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-10-08 12:59:32,364: 	 Executing command: 'status'
+DEBUG 2017-10-08 12:59:32,364: 	 Found CRAB cache file /afs/cern.ch/user/l/lewang/.crab3
+DEBUG 2017-10-08 12:59:32,378: 	 Checking credentials
+DEBUG 2017-10-08 12:59:32,379: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-10-08 12:59:32,379: 	 Getting proxy life time left
+DEBUG 2017-10-08 12:59:33,607: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 85708
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-08 12:59:34,745: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 85707
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-08 12:59:34,746: 	 Proxy valid for 23:48:28 hours
+DEBUG 2017-10-08 12:59:41,590: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-08 12:59:41,590: 	 Checking credentials
+DEBUG 2017-10-08 12:59:41,591: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-10-08 12:59:41,591: 	 Getting proxy life time left
+DEBUG 2017-10-08 12:59:42,507: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 85699
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-08 12:59:43,526: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 85698
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-08 12:59:43,526: 	 Proxy valid for 23:48:19 hours
+DEBUG 2017-10-08 12:59:43,941: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+DEBUG 2017-10-08 12:59:44,153: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-08 12:59:44,154: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-10-08 12:59:44,154: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang_cmsweb.cern.ch for credential name
+DEBUG 2017-10-08 12:59:44,463: 	 Executing : 
+ command : myproxy-info -l 1b9ed1fd5af45f6b0603ad12c45a57a42d266ac3 -s myproxy.cern.ch
+ output : username: 1b9ed1fd5af45f6b0603ad12c45a57a42d266ac3
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  timeleft: 415:56:32  (17.3 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-08 12:59:44,463: 	 Myproxy is valid: 1497392
+DEBUG 2017-10-08 12:59:44,463: 	 Command use: status
+DEBUG 2017-10-08 12:59:44,463: 	 Options use: []
+DEBUG 2017-10-08 12:59:44,964: 	 CRABClient version: 3.3.1707.patch1
+DEBUG 2017-10-08 12:59:44,965: 	 Instance is prod
+DEBUG 2017-10-08 12:59:44,965: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-10-08 12:59:44,965: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-10-08 12:59:45,429: 	 Got information from server oracle database: {u'result': [u'171002_114707:lewang_crab_Wprime_2500_weight_v2', u'None', u'SUBMITTED', u'2017-10-02 11:47:07.088836', u'None', u'2017-10-02 11:47:52.207771', u'None', u'CMSSW_9_2_0', u'slc6_amd64_gcc530', u'/WprimeToWZToWlepZhad_narrow_M-2500_13TeV-madgraph/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM', u'[]', u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 10, 'runs': [], 'lumis': []}", u'-1', u'65534385e9fa5c91e285479a2c26cef3b84726b8a376a33667b6aa8c8f0be7d7.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'lewang', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang', u'cms', u'None', u'None', u'Wprime_2500_weight_v2-00000000000000000000000000000000', u'T2_CH_CERN', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'F', u'Analysis', u'{}', u'[]', u'T', u'vocms052', u'[]', u'1250', u'1', u'2000', u'10', u'None', u'http://vocms0144.cern.ch/mon/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2', u'None', u'None', u'[]', u'[]', u'[]', u'pythia', u'[]', u"['RStreeEDBR_pickup.root']", u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'None', u'0', u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'crab3@vocms0144.cern.ch', u'F', u'[]', u'T', u'/store/user/lewang/', u'F', u'None', u'F', u'F', u'F', u'None', u'WprimeToWZToWlepZhad_narrow_M-2500_13TeV-madgraph', u'filetransfers', u'SUBMIT', u'13351399', u'4c8350854817afd0512a81a0edc9ac8f9838183de71a86b1f7c935a2c3fb46a0.tar.gz', u'188.184.91.100', u'F', u'None'], u'desc': {u'columns': [u'tm_taskname', u'panda_jobset_id', u'tm_task_status', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_totalunits', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_job_type', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_user_webdir', u'tm_activity', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_task_warnings', u'tm_generator', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_asourl', u'tm_events_per_lumi', u'tm_use_parent', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_publish_groupname', u'tm_nonvalid_input_dataset', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_asodb', u'tm_task_command', u'clusterid', u'tm_debug_files', u'tm_submitter_ip_addr', u'tm_ignore_global_blacklist', u'tm_last_publication']}}
+INFO 2017-10-08 12:59:45,429: 	 CRAB project directory:		/afs/cern.ch/user/l/lewang/Xudong/Summer17/MC/CMSSW_9_2_0/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_Wprime_2500_weight_v2
+INFO 2017-10-08 12:59:45,429: 	 Task name:			171002_114707:lewang_crab_Wprime_2500_weight_v2
+INFO 2017-10-08 12:59:45,429: 	 Grid scheduler:			crab3@vocms0144.cern.ch
+INFO 2017-10-08 12:59:45,429: 	 Status on the CRAB server:	SUBMITTED
+INFO 2017-10-08 12:59:45,429: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/171002_114707%3Alewang_crab_Wprime_2500_weight_v2
+INFO 2017-10-08 12:59:45,430: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=lewang&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=171002_114707%3Alewang_crab_Wprime_2500_weight_v2
+DEBUG 2017-10-08 12:59:45,430: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 13351399)
+DEBUG 2017-10-08 12:59:45,430: 	 Webdir is located at http://vocms0144.cern.ch/mon/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2
+DEBUG 2017-10-08 12:59:45,774: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0144/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2
+DEBUG 2017-10-08 12:59:45,774: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0144/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2/status_cache
+DEBUG 2017-10-08 12:59:46,189: 	 Got information from status cache file: {'1': {'Retries': 0, 'WallDurations': [8.0, 2079.0], 'StartTimes': [1506945066.0], 'SubmitTimes': [1506944883.0], 'JobIds': ['13351402.0'], 'EndTimes': [1506947145.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [758668], 'TotalUserCpuTimeHistory': [1881], 'SiteHistory': ['Unknown', 'T2_US_Wisconsin'], 'TotalSysCpuTimeHistory': [40]}}
+INFO 2017-10-08 12:59:46,189: 	 Status on the scheduler:	COMPLETED
+INFO 2017-10-08 12:59:46,189: 	 
+Jobs status:                    finished      100.0% (1/1)
+INFO 2017-10-08 12:59:46,189: 	 
+No publication information (publication has been disabled in the CRAB configuration file)
+DEBUG 2017-10-08 12:59:46,247: 	 Requesting resubmission of failed jobs in task 171002_114707:lewang_crab_Wprime_2500_weight_v2
+ERROR 2017-10-08 12:59:46,247: 	 Found no jobs to resubmit. Only jobs in status failed can be resubmitted. Jobs in status finished can also be resubmitted, but only if the jobids are specified and the force option is set.
+ERROR 2017-10-08 12:59:46,248: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/bin/crab", line 148, in __call__
+    self.cmd()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/lib/python2.7/site-packages/CRABClient/Commands/resubmit.py", line 60, in __call__
+    self.jobids = self.processJobIds(jobList)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/lib/python2.7/site-packages/CRABClient/Commands/resubmit.py", line 161, in processJobIds
+    raise ConfigurationException(msg)
+ConfigurationException: Found no jobs to resubmit. Only jobs in status failed can be resubmitted. Jobs in status finished can also be resubmitted, but only if the jobids are specified and the force option is set.
+DEBUG 2017-10-08 14:46:25,722: 	 Executing command: 'status'
+DEBUG 2017-10-08 14:46:25,722: 	 Found CRAB cache file /afs/cern.ch/user/l/lewang/.crab3
+DEBUG 2017-10-08 14:46:25,734: 	 Checking credentials
+DEBUG 2017-10-08 14:46:25,734: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-10-08 14:46:25,734: 	 Getting proxy life time left
+DEBUG 2017-10-08 14:46:26,872: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 85949
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-08 14:46:27,894: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 85947
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-08 14:46:27,895: 	 Proxy valid for 23:52:29 hours
+DEBUG 2017-10-08 14:46:28,027: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-08 14:46:28,027: 	 Checking credentials
+DEBUG 2017-10-08 14:46:28,027: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-10-08 14:46:28,028: 	 Getting proxy life time left
+DEBUG 2017-10-08 14:46:28,843: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 85947
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-08 14:46:29,873: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 85945
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-08 14:46:29,874: 	 Proxy valid for 23:52:27 hours
+DEBUG 2017-10-08 14:46:30,298: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+DEBUG 2017-10-08 14:46:30,412: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-08 14:46:30,412: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-10-08 14:46:30,412: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang_cmsweb.cern.ch for credential name
+DEBUG 2017-10-08 14:46:30,620: 	 Executing : 
+ command : myproxy-info -l 1b9ed1fd5af45f6b0603ad12c45a57a42d266ac3 -s myproxy.cern.ch
+ output : username: 1b9ed1fd5af45f6b0603ad12c45a57a42d266ac3
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  timeleft: 414:09:46  (17.3 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-08 14:46:30,622: 	 Myproxy is valid: 1490986
+DEBUG 2017-10-08 14:46:30,622: 	 Command use: status
+DEBUG 2017-10-08 14:46:30,622: 	 Options use: ['-d', 'crab_Wprime_2500_weight_v2/']
+DEBUG 2017-10-08 14:46:31,053: 	 CRABClient version: 3.3.1707.patch1
+DEBUG 2017-10-08 14:46:31,053: 	 Instance is prod
+DEBUG 2017-10-08 14:46:31,053: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-10-08 14:46:31,053: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-10-08 14:46:31,649: 	 Got information from server oracle database: {u'result': [u'171002_114707:lewang_crab_Wprime_2500_weight_v2', u'None', u'SUBMITTED', u'2017-10-02 11:47:07.088836', u'None', u'2017-10-02 11:47:52.207771', u'None', u'CMSSW_9_2_0', u'slc6_amd64_gcc530', u'/WprimeToWZToWlepZhad_narrow_M-2500_13TeV-madgraph/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM', u'[]', u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 10, 'runs': [], 'lumis': []}", u'-1', u'65534385e9fa5c91e285479a2c26cef3b84726b8a376a33667b6aa8c8f0be7d7.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'lewang', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang', u'cms', u'None', u'None', u'Wprime_2500_weight_v2-00000000000000000000000000000000', u'T2_CH_CERN', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'F', u'Analysis', u'{}', u'[]', u'T', u'vocms052', u'[]', u'1250', u'1', u'2000', u'10', u'None', u'http://vocms0144.cern.ch/mon/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2', u'None', u'None', u'[]', u'[]', u'[]', u'pythia', u'[]', u"['RStreeEDBR_pickup.root']", u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'None', u'0', u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'crab3@vocms0144.cern.ch', u'F', u'[]', u'T', u'/store/user/lewang/', u'F', u'None', u'F', u'F', u'F', u'None', u'WprimeToWZToWlepZhad_narrow_M-2500_13TeV-madgraph', u'filetransfers', u'SUBMIT', u'13351399', u'4c8350854817afd0512a81a0edc9ac8f9838183de71a86b1f7c935a2c3fb46a0.tar.gz', u'188.184.91.100', u'F', u'None'], u'desc': {u'columns': [u'tm_taskname', u'panda_jobset_id', u'tm_task_status', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_totalunits', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_job_type', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_user_webdir', u'tm_activity', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_task_warnings', u'tm_generator', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_asourl', u'tm_events_per_lumi', u'tm_use_parent', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_publish_groupname', u'tm_nonvalid_input_dataset', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_asodb', u'tm_task_command', u'clusterid', u'tm_debug_files', u'tm_submitter_ip_addr', u'tm_ignore_global_blacklist', u'tm_last_publication']}}
+INFO 2017-10-08 14:46:31,650: 	 CRAB project directory:		/afs/cern.ch/user/l/lewang/Xudong/Summer17/MC/CMSSW_9_2_0/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_Wprime_2500_weight_v2
+INFO 2017-10-08 14:46:31,650: 	 Task name:			171002_114707:lewang_crab_Wprime_2500_weight_v2
+INFO 2017-10-08 14:46:31,650: 	 Grid scheduler:			crab3@vocms0144.cern.ch
+INFO 2017-10-08 14:46:31,650: 	 Status on the CRAB server:	SUBMITTED
+INFO 2017-10-08 14:46:31,650: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/171002_114707%3Alewang_crab_Wprime_2500_weight_v2
+INFO 2017-10-08 14:46:31,650: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=lewang&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=171002_114707%3Alewang_crab_Wprime_2500_weight_v2
+DEBUG 2017-10-08 14:46:31,650: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 13351399)
+DEBUG 2017-10-08 14:46:31,650: 	 Webdir is located at http://vocms0144.cern.ch/mon/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2
+DEBUG 2017-10-08 14:46:31,999: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0144/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2
+DEBUG 2017-10-08 14:46:31,999: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0144/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2/status_cache
+DEBUG 2017-10-08 14:46:32,427: 	 Got information from status cache file: {'1': {'Retries': 0, 'WallDurations': [8.0, 2079.0], 'StartTimes': [1506945066.0], 'SubmitTimes': [1506944883.0], 'JobIds': ['13351402.0'], 'EndTimes': [1506947145.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [758668], 'TotalUserCpuTimeHistory': [1881], 'SiteHistory': ['Unknown', 'T2_US_Wisconsin'], 'TotalSysCpuTimeHistory': [40]}}
+INFO 2017-10-08 14:46:32,427: 	 Status on the scheduler:	COMPLETED
+INFO 2017-10-08 14:46:32,427: 	 
+Jobs status:                    finished      100.0% (1/1)
+INFO 2017-10-08 14:46:32,427: 	 
+No publication information (publication has been disabled in the CRAB configuration file)
+INFO 2017-10-08 14:46:32,475: 	 Log file is /afs/cern.ch/user/l/lewang/Xudong/Summer17/MC/CMSSW_9_2_0/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_Wprime_2500_weight_v2/crab.log
+DEBUG 2017-10-08 16:59:45,838: 	 Executing command: 'status'
+DEBUG 2017-10-08 16:59:45,838: 	 Found CRAB cache file /afs/cern.ch/user/l/lewang/.crab3
+DEBUG 2017-10-08 16:59:45,850: 	 Checking credentials
+DEBUG 2017-10-08 16:59:45,850: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-10-08 16:59:45,850: 	 Getting proxy life time left
+DEBUG 2017-10-08 16:59:46,669: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 85755
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-08 16:59:47,385: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 85754
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-08 16:59:47,386: 	 Proxy valid for 23:49:15 hours
+DEBUG 2017-10-08 16:59:47,504: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-08 16:59:47,505: 	 Checking credentials
+DEBUG 2017-10-08 16:59:47,505: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-10-08 16:59:47,505: 	 Getting proxy life time left
+DEBUG 2017-10-08 16:59:48,113: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 85753
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-08 16:59:48,836: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 85753
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-08 16:59:48,837: 	 Proxy valid for 23:49:13 hours
+DEBUG 2017-10-08 16:59:49,195: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+DEBUG 2017-10-08 16:59:49,304: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-08 16:59:49,304: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-10-08 16:59:49,305: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang_cmsweb.cern.ch for credential name
+DEBUG 2017-10-08 16:59:49,510: 	 Executing : 
+ command : myproxy-info -l 1b9ed1fd5af45f6b0603ad12c45a57a42d266ac3 -s myproxy.cern.ch
+ output : username: 1b9ed1fd5af45f6b0603ad12c45a57a42d266ac3
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  timeleft: 411:56:27  (17.2 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-10-08 16:59:49,511: 	 Myproxy is valid: 1482987
+DEBUG 2017-10-08 16:59:49,511: 	 Command use: status
+DEBUG 2017-10-08 16:59:49,511: 	 Options use: ['-d', 'crab_Wprime_2500_weight_v2/']
+DEBUG 2017-10-08 16:59:49,904: 	 CRABClient version: 3.3.1707.patch1
+DEBUG 2017-10-08 16:59:49,905: 	 Instance is prod
+DEBUG 2017-10-08 16:59:49,905: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-10-08 16:59:49,905: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-10-08 16:59:50,368: 	 Got information from server oracle database: {u'result': [u'171002_114707:lewang_crab_Wprime_2500_weight_v2', u'None', u'SUBMITTED', u'2017-10-02 11:47:07.088836', u'None', u'2017-10-02 11:47:52.207771', u'None', u'CMSSW_9_2_0', u'slc6_amd64_gcc530', u'/WprimeToWZToWlepZhad_narrow_M-2500_13TeV-madgraph/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM', u'[]', u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 10, 'runs': [], 'lumis': []}", u'-1', u'65534385e9fa5c91e285479a2c26cef3b84726b8a376a33667b6aa8c8f0be7d7.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'lewang', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang', u'cms', u'None', u'None', u'Wprime_2500_weight_v2-00000000000000000000000000000000', u'T2_CH_CERN', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'F', u'Analysis', u'{}', u'[]', u'T', u'vocms052', u'[]', u'1250', u'1', u'2000', u'10', u'None', u'http://vocms0144.cern.ch/mon/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2', u'None', u'None', u'[]', u'[]', u'[]', u'pythia', u'[]', u"['RStreeEDBR_pickup.root']", u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'None', u'0', u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'crab3@vocms0144.cern.ch', u'F', u'[]', u'T', u'/store/user/lewang/', u'F', u'None', u'F', u'F', u'F', u'None', u'WprimeToWZToWlepZhad_narrow_M-2500_13TeV-madgraph', u'filetransfers', u'SUBMIT', u'13351399', u'4c8350854817afd0512a81a0edc9ac8f9838183de71a86b1f7c935a2c3fb46a0.tar.gz', u'188.184.91.100', u'F', u'None'], u'desc': {u'columns': [u'tm_taskname', u'panda_jobset_id', u'tm_task_status', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_totalunits', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_job_type', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_user_webdir', u'tm_activity', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_task_warnings', u'tm_generator', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_asourl', u'tm_events_per_lumi', u'tm_use_parent', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_publish_groupname', u'tm_nonvalid_input_dataset', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_asodb', u'tm_task_command', u'clusterid', u'tm_debug_files', u'tm_submitter_ip_addr', u'tm_ignore_global_blacklist', u'tm_last_publication']}}
+INFO 2017-10-08 16:59:50,369: 	 CRAB project directory:		/afs/cern.ch/user/l/lewang/Xudong/Summer17/MC/CMSSW_9_2_0/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_Wprime_2500_weight_v2
+INFO 2017-10-08 16:59:50,369: 	 Task name:			171002_114707:lewang_crab_Wprime_2500_weight_v2
+INFO 2017-10-08 16:59:50,369: 	 Grid scheduler:			crab3@vocms0144.cern.ch
+INFO 2017-10-08 16:59:50,369: 	 Status on the CRAB server:	SUBMITTED
+INFO 2017-10-08 16:59:50,369: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/171002_114707%3Alewang_crab_Wprime_2500_weight_v2
+INFO 2017-10-08 16:59:50,370: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=lewang&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=171002_114707%3Alewang_crab_Wprime_2500_weight_v2
+DEBUG 2017-10-08 16:59:50,370: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 13351399)
+DEBUG 2017-10-08 16:59:50,370: 	 Webdir is located at http://vocms0144.cern.ch/mon/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2
+DEBUG 2017-10-08 16:59:50,785: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0144/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2
+DEBUG 2017-10-08 16:59:50,785: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0144/cms1522/171002_114707:lewang_crab_Wprime_2500_weight_v2/status_cache
+DEBUG 2017-10-08 16:59:51,149: 	 Got information from status cache file: {'1': {'Retries': 0, 'WallDurations': [8.0, 2079.0], 'StartTimes': [1506945066.0], 'SubmitTimes': [1506944883.0], 'JobIds': ['13351402.0'], 'EndTimes': [1506947145.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [758668], 'TotalUserCpuTimeHistory': [1881], 'SiteHistory': ['Unknown', 'T2_US_Wisconsin'], 'TotalSysCpuTimeHistory': [40]}}
+INFO 2017-10-08 16:59:51,149: 	 Status on the scheduler:	COMPLETED
+INFO 2017-10-08 16:59:51,149: 	 
+Jobs status:                    finished      100.0% (1/1)
+INFO 2017-10-08 16:59:51,149: 	 
+No publication information (publication has been disabled in the CRAB configuration file)
+INFO 2017-10-08 16:59:51,182: 	 Log file is /afs/cern.ch/user/l/lewang/Xudong/Summer17/MC/CMSSW_9_2_0/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_Wprime_2500_weight_v2/crab.log

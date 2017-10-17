@@ -1,0 +1,4 @@
+tmp/slc6_amd64_gcc530/src/ExoDiBosonResonances/EDBRTreeMaker/plugins/ExoDiBosonResonancesEDBRTreeMakerAuto/EDBRTreeMaker.o: \
+ src/ExoDiBosonResonances/EDBRTreeMaker/plugins/EDBRTreeMaker.cc \
+ src/ExoDiBosonResonances/EDBRTreeMaker/plugins/EDBRChannels.h \
+

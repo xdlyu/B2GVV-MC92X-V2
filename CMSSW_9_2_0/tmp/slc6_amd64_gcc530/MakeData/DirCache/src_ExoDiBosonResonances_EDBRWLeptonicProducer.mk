@@ -1,0 +1,2 @@
+ALL_PACKAGES += ExoDiBosonResonances/EDBRWLeptonicProducer
+subdirs_src_ExoDiBosonResonances_EDBRWLeptonicProducer := src_ExoDiBosonResonances_EDBRWLeptonicProducer_plugins

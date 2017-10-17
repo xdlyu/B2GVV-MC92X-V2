@@ -1,0 +1,2 @@
+ALL_PACKAGES += ExoDiBosonResonances/EDBRCommon
+subdirs_src_ExoDiBosonResonances_EDBRCommon := src_ExoDiBosonResonances_EDBRCommon_plugins src_ExoDiBosonResonances_EDBRCommon_python

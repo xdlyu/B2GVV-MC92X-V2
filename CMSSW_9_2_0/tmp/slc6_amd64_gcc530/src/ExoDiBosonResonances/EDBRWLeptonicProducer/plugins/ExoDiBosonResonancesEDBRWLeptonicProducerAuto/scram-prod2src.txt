@@ -1,0 +1,1 @@
+ExoDiBosonResonancesEDBRWLeptonicProducerAuto ExoDiBosonResonances/EDBRWLeptonicProducer/pluginsEDBRWLeptonicProducer.cc
